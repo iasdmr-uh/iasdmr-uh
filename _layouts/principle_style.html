@@ -37,11 +37,14 @@
 
         {{ content }}
 
-        <iframe src="{{ site.url }}{{ site.baseurl }}/assets/pdf/principle_{{ page.num }}.pdf" width="100%"
-          height="1200px">
-          Este navegador no soporta la visualización de PDFs. Por favor, descarga el PDF para verlo: <a
-            href="{{ site.url }}{{ site.baseurl }}/assets/pdf/principle_{{ page.num }}.pdf">Descargar PDF</a>
-        </iframe>
+{% if page.pdf %}
+  <p class="mt-4">
+    <a href="{{ site.baseurl }}{{ page.pdf }}" target="_blank" class="btn btn-custom-pdf">
+      Leer más
+    </a>
+  </p>
+{% endif %}
+
       </div>
     </div>
 
