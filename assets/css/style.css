@@ -947,3 +947,18 @@ Custom
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.btn-custom-pdf {
+  background-color: #00166c;
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 50px;
+}
+
+.btn-custom-pdf:hover {
+  background-color: #002a99;
+  text-decoration: none;
+  color: white;
+}
