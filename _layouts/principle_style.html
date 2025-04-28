@@ -37,13 +37,18 @@
 
         {{ content }}
 
-{% if page.pdf %}
-  <p class="mt-4">
-    <a href="{{ site.baseurl }}{{ page.pdf }}" target="_blank" class="btn btn-custom-pdf">
-      Leer más
-    </a>
-  </p>
-{% endif %}
+        {% for principle in site.data.principles %}
+        {% if principle.link == page.permalink %}
+          {% if principle.pdf %}
+            <p class="mt-4 text-start">
+              <a href="{{ site.baseurl }}{{ principle.pdf }}" target="_blank" class="btn btn-custom-pdf">
+                Leer más
+              </a>
+            </p>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      
 
       </div>
     </div>
