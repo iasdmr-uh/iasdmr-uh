@@ -1,12 +1,27 @@
 ministers:
-  - name: Felix Padilla
   - name: Jary Reyes
-  - name: Rubí Gámez
+    state: Ministro Ordenado
+  - name: Rubi Gamez
+    state: Ministro Ordenado
 
 pastors:
-  - name: Abraham Gómez
   - name: Daniel Contreras
+    state: Pastor Ordenando
   - name: Eliezer Pereira
-  - name: Pedro Alfaro
-    state: Jubilado
+    state: Pastor Ordenando
   - name: Santos Guardado
+    state: Pastor Ordenando
+  - name: Abraham Gomez
+    state: Pastor Laico
+  - name: Daniel Hernandez
+    state: Pastor Ordenando
+  - name: Kenan Hernandez
+    state: Pastor Ordenando
+  - name: Pedro Alfaro
+    state: Pastor Jubilado
+
+workers:
+  - name: Victor Garcia
+    state: Obrero Bíblico
+  - name: Isai Lainez
+    state: Obrero Bíblico
