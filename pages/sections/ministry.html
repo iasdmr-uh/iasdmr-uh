@@ -12,11 +12,9 @@ description: |
 sidebar_title: Contexto
 sidebar_content:
 ---
-<!-- ========== CONTENEDOR PRINCIPAL ========== -->
 <div class="container">
   <div class="row">
 
-    <!-- ======= COLUMNA ÍNDICE ======= -->
     <div class="col-md-3 wow animated fadeInLeft">
       <div class="sidebar">
         <h4>Índice</h4>
@@ -34,10 +32,8 @@ sidebar_content:
       </div>
     </div>
 
-    <!-- ======= COLUMNA CONTENIDO DINÁMICO ======= -->
     <div class="col-md-9">
 
-  <!-- ********** SECCIÓN MINISTROS ********** -->
 {% assign ministers = site.data.ministers.ministers %}
 <div id="ministros" class="services-header" style="display:block;">
   <header class="principle-header"><h2>Ministros</h2></header>
@@ -62,7 +58,6 @@ sidebar_content:
   {% endfor %}
 </div>
 
-<!-- ********** SECCIÓN PASTORES ********** -->
 {% assign pastors = site.data.ministers.pastors %}
 <div id="pastores" class="services-header" style="display:none;">
   <header class="principle-header"><h2>Pastores</h2></header>
@@ -87,7 +82,6 @@ sidebar_content:
   {% endfor %}
 </div>
 
-<!-- ********** SECCIÓN OBREROS ********** -->
 {% assign workers = site.data.ministers.workers %}
 <div id="workers" class="services-header" style="display:none;">
   <header class="principle-header"><h2>Obreros</h2></header>
@@ -113,7 +107,6 @@ sidebar_content:
 </div>
 
 
-<!-- ========== SCRIPT PARA MOSTRAR / OCULTAR SECCIONES ========== -->
 <script>
   function showSection(sectionId) {
     const sections = ['ministros', 'pastores', 'workers'];
@@ -121,7 +114,6 @@ sidebar_content:
       const el = document.getElementById(id);
       if (el) { el.style.display = (id === sectionId) ? 'block' : 'none'; }
     });
-    // Opcional: desplaza al top del contenido cuando se cambia sección
     document.querySelector('.col-md-9').scrollIntoView({behavior: 'smooth'});
   }
 </script>
