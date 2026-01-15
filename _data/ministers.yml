@@ -1,28 +1,68 @@
 ministers:
   - name: Jary Reyes
     state: Ministro Ordenado
+    photo: Jary_Reyes.jpg
   - name: Rubi Gamez
     state: Ministro Ordenado
 
 pastors:
-  - name: Daniel Contreras
+  - name: Daniel Alberto Contreras Cruz  
     state: Pastor Ordenando
-  - name: Eliezer Pereira
+    photo: Daniel_Contreras.jpg
+  - name: Steven Eliézer Pereira Wilson 
     state: Pastor Ordenando
+    photo: Eliezer_Pereira.jpg
   - name: Santos Guardado
     state: Pastor Ordenando
+    photo: Santos_Guardado.jpg
   - name: Abraham Gomez
     state: Pastor Laico
-  - name: Daniel Hernandez
+  - name: José Daniel Hernández 
     state: Pastor Ordenando
-  - name: Kenan Hernandez
+    photo: Daniel_Hernandez.jpg
+  - name: Kenan Jesua Hernandez Zuniga
     state: Pastor Ordenando
+    photo: Kenan_Hernandez.jpg
   - name: Pedro Alfaro
     state: Pastor Jubilado
 
 workers:
-  - name: Victor Garcia
+  - name: JONNY ALEXANDER HERNANDEZ HERNANDEZ 
     state: Obrero Bíblico
-  - name: Isai Lainez
+    photo: Jony_Hernandez.jpg
+  - name: Dorian José Irías canales 
     state: Obrero Bíblico
-
+    photo: Dorian_Irias.jpg
+  - name: Alejandro Hernandez Paz 
+    state: Obrero Bíblico
+    photo: Alejandro_Hernandez.jpg
+  - name: José Mercedes Vásquez Alfaro 
+    state: Obrero Bíblico
+    photo: Jose_Vasquez.jpg
+  - name: Miguel Angel Vasquez Escobar 
+    state: Obrero Bíblico
+    photo: Miguel_Vasquez.jpg
+  - name: Orlin Josue Alfaro Nataren 
+    state: Obrero Bíblico
+    photo: Orlin_Alfaro.jpg
+  - name: Eduyn Alexy Hernández Aguilar 
+    state: Obrero Bíblico
+    photo: Alexy_Hernandez.jpg 
+  - name: Nick Simons Gavarrete Pérez 
+    state: Obrero Bíblico
+    photo: Nick_Gavarrete.jpg
+  - name: Oscar Danilo Salinas Flores
+    state: Obrero Bíblico
+    photo: Oscar_Salinas.jpg
+  - name: Denis Alexánder Mejía Ramírez 
+    state: Obrero Bíblico
+    photo: Denis_Mejia.jpg
+  - name: Santiago Domínguez Gómez   
+    state: Obrero Bíblico
+    photo: Santiago_Dominguez.jpg
+  - name: Melvin Rolando Martinez VIlleda.
+    state: Obrero Bíblico
+    photo: Rolando_Martinez.jpg
+  - name: Abimael Bonilla Navarrete 
+    state: Obrero Bíblico
+    photo: Abimael_Bonilla.jpg
