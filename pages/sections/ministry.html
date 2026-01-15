@@ -10,58 +10,113 @@ description: |
         dedicación y amor.
     </em>
 sidebar_title: Contexto
-sidebar_content: |
-    Descubre más sobre los ministros y pastores que trabajan incansablemente para
-    fomentar la fe, la unidad y el crecimiento espiritual de nuestros miembros. ¡Conéctate con nosotros y sé
-    parte de esta gran familia!
+sidebar_content:
 ---
-
 <div class="container">
-    <div class="row">
-        <div class="col-sm-8 col-md-8">
-            <div class="services-header">
-                <header class="principle-header">
-                    <h2>Ministros:</h2>
-                </header>
+  <div class="row">
 
-                {% for minister in site.data.ministers.ministers %}
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="{{ site.url }}{{ site.baseurl }}/assets/img/principles/principle_1.jpg"
-                            class="card-img-top" alt="Thumbnail for {{ minister.name }}">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ minister.name }}</h5>
-                            <div class="card-text">
-                                {{ minister.state }}
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-
-            <div class="services-header">
-                <header class="principle-header">
-                    <h2>Pastores: </h2>
-                </header>
-
-                {% for pastor in site.data.ministers.pastors %}
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="{{ site.url }}{{ site.baseurl }}/assets/img/principles/principle_1.jpg"
-                            class="card-img-top" alt="Thumbnail for {{ pastor.name }}">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ pastor.name }}</h5>
-                            <div class="card-text">
-                                <em>{{ pastor.state }}</em>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
+    <div class="col-md-3 wow animated fadeInLeft">
+      <div class="sidebar">
+        <h4>Índice</h4>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#" onclick="showSection('ministros')">Ministros</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#" onclick="showSection('pastores')">Pastores</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#" onclick="showSection('workers')">Obreros</a>
+          </li>
+        </ul>
+      </div>
     </div>
+
+    <div class="col-md-9">
+
+{% assign ministers = site.data.ministers.ministers %}
+<div id="ministros" class="services-header" style="display:block;">
+  <header class="principle-header"><h2>Ministros</h2></header>
+
+  {% for minister in ministers %}
+    {% assign mod = forloop.index0 | modulo: 2 %}
+    {% if mod == 0 %}<div class="row">{% endif %}
+
+    <div class="col-12 col-md-6">
+      <div class="card mb-4">
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/img/principles/principle_1.jpg"
+             class="card-img-top" alt="Foto de {{ minister.name }}">
+        <div class="card-body text-center">
+          <h5 class="card-title">{{ minister.name }}</h5>
+          <p class="card-text"><em>{{ minister.state }}</em></p>
+        </div>
+      </div>
+    </div>
+
+    {% assign mod2 = forloop.index0 | modulo: 2 %}
+    {% if mod2 == 1 or forloop.last %}</div>{% endif %}
+  {% endfor %}
 </div>
+
+{% assign pastors = site.data.ministers.pastors %}
+<div id="pastores" class="services-header" style="display:none;">
+  <header class="principle-header"><h2>Pastores</h2></header>
+
+  {% for pastor in pastors %}
+    {% assign mod = forloop.index0 | modulo: 2 %}
+    {% if mod == 0 %}<div class="row">{% endif %}
+
+    <div class="col-12 col-md-6">
+      <div class="card mb-4">
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/img/principles/principle_1.jpg"
+             class="card-img-top" alt="Foto de {{ pastor.name }}">
+        <div class="card-body text-center">
+          <h5 class="card-title">{{ pastor.name }}</h5>
+          <p class="card-text"><em>{{ pastor.state }}</em></p>
+        </div>
+      </div>
+    </div>
+
+    {% assign mod2 = forloop.index0 | modulo: 2 %}
+    {% if mod2 == 1 or forloop.last %}</div>{% endif %}
+  {% endfor %}
+</div>
+
+{% assign workers = site.data.ministers.workers %}
+<div id="workers" class="services-header" style="display:none;">
+  <header class="principle-header"><h2>Obreros</h2></header>
+
+  {% for worker in workers %}
+    {% assign mod = forloop.index0 | modulo: 2 %}
+    {% if mod == 0 %}<div class="row">{% endif %}
+
+    <div class="col-12 col-md-6">
+      <div class="card mb-4">
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/img/principles/principle_1.jpg"
+             class="card-img-top" alt="Foto de {{ worker.name }}">
+        <div class="card-body text-center">
+          <h5 class="card-title">{{ worker.name }}</h5>
+          <p class="card-text"><em>{{ worker.state }}</em></p>
+        </div>
+      </div>
+    </div>
+
+    {% assign mod2 = forloop.index0 | modulo: 2 %}
+    {% if mod2 == 1 or forloop.last %}</div>{% endif %}
+  {% endfor %}
+</div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  function showSection(sectionId) {
+    const sections = ['ministros', 'pastores', 'workers'];
+    sections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) { el.style.display = (id === sectionId) ? 'block' : 'none'; }
+    });
+    document.querySelector('.col-md-9').scrollIntoView({behavior: 'smooth'});
+  }
+</script>

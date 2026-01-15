@@ -26,21 +26,20 @@ animation:
             </div>
         </div>
         <div class="col-md-9 wow animated fadeInRight">
-            <div class="row">
-                {% for principle in site.data.principles %}
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <a id="principle{{ principle.id }}" href="{{ site.baseurl }}{{ principle.link }}">
-                            <img src="{{ site.url }}{{ site.baseurl }}/assets/img/principles/principle_{{ principle.id }}.jpg"
-                                class="card-img-top" alt="Thumbnail for {{ principle.title }}">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ principle.title }}</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
+ <div class="row">
+  {% for principle in site.data.principles %}
+  <div class="col-md-4">
+    <div class="card mb-4">
+      <a id="principle{{ principle.id }}" href="{{ site.baseurl }}{{ principle.link }}">
+        <img src="{{ site.baseurl }}/assets/img/principles/principle_{{ principle.id }}.png"
+             class="card-img-top" alt="Thumbnail for {{ principle.title }}">
+        <div class="card-body">
+        </div>
+      </a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
         </div>
     </div>
 </div>
