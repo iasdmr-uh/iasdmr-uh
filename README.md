@@ -28,7 +28,7 @@ I removed certain features from the original theme packages as we do not really 
 ## Installation
 1. For first time user, you have to install Ruby and Rails. If you do not have Ruby on Rails installed, you may follow [this tutorial](http://melvinchng.github.io/rails/RubyOnRailsInstallation.html) that I wrote for Windows, Linux, and MacOS (installation videos are included).
 2. Install Jekyll by using the command `gem install jekyll`.
-3. Start your localhost server by using the command `jekyll serve`. Make sure that you are at the root directory of your folder before using this command.
+3. Start your localhost server by using the command `jekyll serve --config _config.yml,_config.dev.yml`. Make sure that you are at the root directory of your folder before using this command.
 4. Your site should be accessible at `localhost:4000`.
 5. For additional information about Jekyll, refer to the [official website](http://jekyllrb.com/). 
 
@@ -38,5 +38,5 @@ I removed certain features from the original theme packages as we do not really 
 sudo docker run --rm -ti -v $(pwd):/srv -w /srv --net host --entrypoint /bin/sh ruby:2.7
 gem install bundler:1.16.0
 bundle install
-bundle exec jekyll serve
+bundle exec jekyll serve --config _config.yml,_config.dev.yml
 ```

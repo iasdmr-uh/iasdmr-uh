@@ -937,8 +937,7 @@ Custom
 
 .card-img-top {
   width: 100%;
-  height: auto;
-  max-height: 150px;
+  height: 400px;
   /* Ajusta según tu preferencia */
   object-fit: cover;
 }
