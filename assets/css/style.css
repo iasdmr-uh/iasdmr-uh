@@ -16,7 +16,8 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 */
 :root {
   --color-primary: #0A245E;
-  --color-accent: #F1BE48;
+  --color-accent: #D4AF37;
+  --color-accent-old: #D4AF37;  /* Legacy - migrating to #D4AF37 */
   --color-background: #F2F1EF;
   --color-text-muted: #7E7E82;
 }
@@ -229,7 +230,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #F1BE48;
+  color: #D4AF37;
   text-decoration: none;
   -o-transition: all .3s;
   -moz-transition: all .3s;
@@ -589,7 +590,7 @@ p.blog-text {
 .action-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  border-color: #F1BE48;
+  border-color: #D4AF37;
 }
 
 .action-card-icon {
@@ -613,7 +614,7 @@ p.blog-text {
 }
 
 .action-card .btn {
-  background: #F1BE48;
+  background: #D4AF37;
   color: #0A245E;
   border: none;
   padding: 12px 30px;
@@ -657,7 +658,7 @@ p.blog-text {
 }
 
 .events-header h2 i {
-  color: #F1BE48;
+  color: #D4AF37;
   margin-right: 12px;
 }
 
@@ -673,7 +674,7 @@ p.blog-text {
 }
 
 .events-view-all:hover {
-  color: #F1BE48;
+  color: #D4AF37;
 }
 
 .events-view-all i {
@@ -703,7 +704,7 @@ p.blog-text {
 .event-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  border-color: #F1BE48;
+  border-color: #D4AF37;
 }
 
 .event-date {
@@ -755,7 +756,7 @@ p.blog-text {
 
 .event-time i,
 .event-location i {
-  color: #F1BE48;
+  color: #D4AF37;
   width: 18px;
   margin-right: 8px;
 }
@@ -829,7 +830,7 @@ p.blog-text {
 }
 
 .cta-section .btn {
-  background: #F1BE48;
+  background: #D4AF37;
   color: #0A245E;
   border: none;
   padding: 15px 40px;
@@ -897,7 +898,7 @@ p.blog-text {
   display: block;
   width: 60px;
   height: 4px;
-  background: #F1BE48;
+  background: #D4AF37;
   margin: 0 auto 20px;
   border-radius: 2px;
 }
@@ -946,8 +947,8 @@ p.blog-text {
 }
 
 .sabbath-hero-section .btn-outline-light:hover {
-  background: #F1BE48;
-  border-color: #F1BE48;
+  background: #D4AF37;
+  border-color: #D4AF37;
   color: #0A245E;
 }
 
@@ -1032,7 +1033,7 @@ footer {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 15px;
-  color: #F1BE48;
+  color: #D4AF37;
 }
 
 .footer-main h5 {
@@ -1069,7 +1070,7 @@ footer {
 }
 
 .footer-links a:hover {
-  color: #F1BE48;
+  color: #D4AF37;
 }
 
 /* Footer Contact List */
@@ -1088,7 +1089,7 @@ footer {
 }
 
 .footer-contact-list i {
-  color: #F1BE48;
+  color: #D4AF37;
   width: 20px;
 }
 
@@ -1108,7 +1109,7 @@ footer {
 }
 
 .social-icons a:hover {
-  background: #F1BE48;
+  background: #D4AF37;
   color: #0A245E;
 }
 
@@ -1386,7 +1387,7 @@ footer {
 }
 
 .carousel-indicators button.active {
-  background-color: #F1BE48;
+  background-color: #D4AF37;
 }
 
 /* Carousel Caption with gradient overlay */
@@ -1438,7 +1439,7 @@ footer {
 }
 
 .carousel-caption .carousel-body {
-  color: #F1BE48;
+  color: #D4AF37;
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -1498,7 +1499,7 @@ Custom
 
 .sidebar .list-group-item:hover,
 .sidebar .list-group-item:focus {
-  background: #F1BE48;
+  background: #D4AF37;
   color: #0A245E;
 }
 
@@ -1647,11 +1648,11 @@ Custom
 }
 
 .sidebar-action:hover {
-  color: #F1BE48;
+  color: #D4AF37;
 }
 
 .sidebar-action i {
-  color: #F1BE48;
+  color: #D4AF37;
   width: 20px;
   font-size: 1.1rem;
 }
@@ -1700,7 +1701,7 @@ Custom
 #ministros .card-body,
 #pastores .card-body,
 #workers .card-body {
-  border-top: 3px solid #F1BE48;
+  border-top: 3px solid #D4AF37;
 }
 
 .btn-custom-pdf {
@@ -1717,7 +1718,7 @@ Custom
 }
 
 .btn-custom-pdf:hover {
-  background-color: #F1BE48;
+  background-color: #D4AF37;
   text-decoration: none;
   color: #0A245E;
   transform: translateY(-1px);
@@ -1726,7 +1727,7 @@ Custom
 /* Services section link styling */
 .services-more a {
   display: inline-block;
-  background-color: #F1BE48;
+  background-color: #D4AF37;
   color: #0A245E;
   padding: 10px 20px;
   border-radius: 6px;
@@ -1751,7 +1752,7 @@ Custom
 }
 
 .coming-soon-container i {
-  color: #F1BE48;
+  color: #D4AF37;
   margin-bottom: 25px;
 }
 
@@ -1793,7 +1794,7 @@ html {
   color: #0A245E;
   margin-bottom: 30px;
   padding-bottom: 15px;
-  border-bottom: 3px solid #F1BE48;
+  border-bottom: 3px solid #D4AF37;
 }
 
 /* Staff card grid */
@@ -1856,7 +1857,7 @@ html {
 /* Staff info section */
 .staff-info {
   padding: 20px;
-  border-top: 3px solid #F1BE48;
+  border-top: 3px solid #D4AF37;
 }
 
 /* Staff name */
@@ -1929,7 +1930,7 @@ html {
   border-radius: 8px;
   padding: 30px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border-top: 3px solid #F1BE48;
+  border-top: 3px solid #D4AF37;
   margin-bottom: 30px;
 }
 
@@ -2066,7 +2067,7 @@ html {
 }
 
 .btn-contact-submit:hover {
-  background: #F1BE48;
+  background: #D4AF37;
   color: #0A245E;
   transform: translateY(-1px);
 }
@@ -2104,7 +2105,7 @@ html {
   color: #0A245E;
   margin-bottom: 25px;
   padding-bottom: 15px;
-  border-bottom: 3px solid #F1BE48;
+  border-bottom: 3px solid #D4AF37;
 }
 
 .about-subsection-title {
@@ -2133,7 +2134,7 @@ html {
 }
 
 .mission-list li i {
-  color: #F1BE48;
+  color: #D4AF37;
   font-size: 1.2rem;
   margin-top: 4px;
   flex-shrink: 0;
@@ -2157,7 +2158,7 @@ html {
   padding: 35px 25px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border-top: 4px solid #F1BE48;
+  border-top: 4px solid #D4AF37;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -2232,7 +2233,7 @@ html {
 }
 
 .org-box:hover {
-  border-color: #F1BE48;
+  border-color: #D4AF37;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
@@ -2279,7 +2280,7 @@ html {
 .org-connector {
   width: 3px;
   height: 30px;
-  background: #F1BE48;
+  background: #D4AF37;
   margin: 0 auto;
 }
 
@@ -2299,7 +2300,7 @@ html {
   transform: translateX(-50%);
   width: 3px;
   height: 15px;
-  background: #F1BE48;
+  background: #D4AF37;
 }
 
 .org-connector-triple::after {
@@ -2309,7 +2310,7 @@ html {
   left: 0;
   right: 0;
   height: 3px;
-  background: #F1BE48;
+  background: #D4AF37;
 }
 
 @media (max-width: 767px) {
@@ -2383,7 +2384,7 @@ html {
   font-size: 1.5rem;
   margin: 40px 0 20px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #F1BE48;
+  border-bottom: 2px solid #D4AF37;
 }
 
 .gallery-cta {
@@ -2541,7 +2542,7 @@ html {
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border-left: 4px solid #F1BE48;
+  border-left: 4px solid #D4AF37;
 }
 
 .opportunity-card h4 {
@@ -2573,7 +2574,7 @@ html {
 }
 
 .btn-volunteer {
-  background: #F1BE48;
+  background: #D4AF37;
   color: #0A245E;
   padding: 14px 30px;
   border-radius: 6px;
@@ -2626,7 +2627,7 @@ html {
 
 .giving-card-icon {
   font-size: 2.5rem;
-  color: #F1BE48;
+  color: #D4AF37;
   margin-bottom: 15px;
 }
 
@@ -2717,7 +2718,7 @@ html {
 }
 
 .service-times-section .section-title i {
-  color: #F1BE48;
+  color: #D4AF37;
   margin-right: 10px;
 }
 
@@ -2735,7 +2736,7 @@ html {
   font-size: 1.3rem;
   margin-bottom: 20px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #F1BE48;
+  border-bottom: 2px solid #D4AF37;
 }
 
 .schedule-item {
@@ -2751,7 +2752,7 @@ html {
 }
 
 .schedule-time {
-  color: #F1BE48;
+  color: #D4AF37;
   font-weight: 600;
   font-size: 1rem;
 }
@@ -2771,7 +2772,7 @@ html {
 }
 
 .schedule-card-location h3 i {
-  color: #F1BE48;
+  color: #D4AF37;
 }
 
 .schedule-card-location p {
@@ -2780,7 +2781,7 @@ html {
 }
 
 .btn-schedule {
-  background: #F1BE48;
+  background: #D4AF37;
   color: #0A245E;
   padding: 10px 24px;
   border-radius: 6px;
