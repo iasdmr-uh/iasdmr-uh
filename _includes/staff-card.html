@@ -1,0 +1,21 @@
+<div class="col-lg-4 col-md-6 col-12">
+  <div class="staff-card">
+    {% if include.person.photo %}
+    <img src="{{ site.baseurl }}/assets/photos-staff/{{ include.folder }}/{{ include.person.photo }}"
+         class="staff-photo"
+         loading="lazy"
+         alt="Foto de {{ include.person.name }}"
+         onerror="this.onerror=null; this.src='{{ site.baseurl }}/assets/img/placeholder-person.svg';">
+    {% else %}
+    <div class="staff-placeholder">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <circle cx="50" cy="35" r="20" fill="#BDBDBD"/>
+        <path d="M50 60 C25 60 15 80 15 95 L85 95 C85 80 75 60 50 60" fill="#BDBDBD"/>
+      </svg>
+    </div>
+    {% endif %}
+    <div class="staff-info">
+      <h5 class="staff-name">{{ include.person.name }}</h5>
+    </div>
+  </div>
+</div>
