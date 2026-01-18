@@ -2,29 +2,22 @@
 <html lang="es">
 
 {% include head.html %}
-{% include header.html %}
 
 <body>
+  {% include header.html %}
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="container">
+      <span class="page-hero-accent"></span>
+      <h1 class="page-hero-title">{{ page.title }}</h1>
+      {% if page.description %}
+      <p class="page-hero-subtitle">{{ page.description | strip_html }}</p>
+      {% endif %}
+    </div>
+  </div>
 
   <div class="container">
-
-    <!-- banner image -->
-    {% if page.banner%}
-    <div class="row container-kamn">
-      <img src="{{ site.baseurl }}{{ page.banner }}" class="blog-post img-fluid" alt="Feature-img" width="100%">
-    </div>
-    {% endif %}
-
-    <!-- section description -->
-    <div class="row">
-      <div class="services-header">
-        <h3 class="services-header-title">{{ page.title }}</h3>
-        <p class="services-header-body">
-          {{ page.description }}
-        </p>
-        <hr>
-      </div>
-    </div>
 
     <div class="row">
       <!-- side bar -->
