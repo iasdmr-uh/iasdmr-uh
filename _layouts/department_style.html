@@ -107,21 +107,21 @@ layout: base
     </div>
   </section>
 
-  <!-- WhatsApp CTA -->
+  <!-- CTA Section -->
   <section class="department-cta">
     <h3>¿Quieres participar en este departamento?</h3>
     <p>Contáctanos y te ayudaremos a integrarte en el ministerio de {{ dept.title }}.</p>
-    <a href="https://wa.me/{{ site.whatsapp_number }}?text=Hola%2C%20me%20gustaría%20participar%20en%20el%20departamento%20de%20{{ dept.title | url_encode }}." target="_blank" class="btn btn-volunteer">
-      <i class="fa-brands fa-whatsapp"></i> Quiero participar
-    </a>
+    <div class="department-cta-buttons">
+      <a href="https://wa.me/{{ site.whatsapp_number }}?text=Hola%2C%20me%20gustaría%20participar%20en%20el%20departamento%20de%20{{ dept.title | url_encode }}." target="_blank" class="btn btn-volunteer">
+        <i class="fa-brands fa-whatsapp"></i> Quiero participar
+      </a>
+      {% if dept.facebook %}
+      <a href="{{ dept.facebook }}" target="_blank" rel="noopener" class="btn btn-facebook">
+        <i class="fa-brands fa-facebook"></i> Facebook de {{ dept.title }}
+      </a>
+      {% endif %}
+    </div>
   </section>
-
-  <!-- Back to Departments -->
-  <div class="department-back">
-    <a href="{{ site.baseurl }}/departments/" class="btn-back">
-      <i class="fa-solid fa-arrow-left"></i> Ver todos los departamentos
-    </a>
-  </div>
 
 </div><!-- end col-lg-9 -->
 </div><!-- end row -->

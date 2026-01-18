@@ -23,11 +23,9 @@ pastors:
   - name: Kenan Jesua Hernandez Zuniga
     state: Pastor Ordenando
     photo: Kenan_Hernandez.jpg
-  - name: Pedro Alfaro
-    state: Pastor Jubilado
 
 workers:
-  - name: JONNY ALEXANDER HERNANDEZ HERNANDEZ 
+  - name: Jonny Alexander Hernández Hernández 
     state: Obrero Bíblico
     photo: Jony_Hernandez.jpg
   - name: Dorian José Irías canales 

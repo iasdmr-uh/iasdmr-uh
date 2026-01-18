@@ -5,6 +5,7 @@
   image: jovenes_union.jpg
   summary: Ministerio dedicado al crecimiento espiritual y desarrollo de los jóvenes.
   mission: Guiar a los jóvenes en su camino espiritual, fortaleciendo su fe y preparándolos para servir a Dios y a la comunidad.
+  facebook: https://www.facebook.com/JRMultimediaHonduras/
   leader:
     name: Jary Reyes
     photo: placeholder.jpg
@@ -56,6 +57,7 @@
   image: musica_union.jpg
   summary: Alabando a Dios a través de himnos y cánticos espirituales en nuestros cultos.
   mission: Dirigir a la congregación en la adoración a Dios a través de la música, cultivando talentos musicales para Su gloria.
+  facebook: https://www.facebook.com/profile.php?id=61566967660514
   leader:
     name: Axel Avelar
     photo: placeholder.jpg
@@ -150,6 +152,24 @@
     - Programas misioneros
     - Capacitación de maestros
   schedule: Sábados 9:00 AM - 10:30 AM
+
+- id: industria
+  title: Industria y Comercio
+  slug: industria
+  icon: fa-solid fa-industry
+  image: industria_union.jpg
+  summary: Promoviendo el desarrollo económico y el emprendimiento basado en principios cristianos.
+  mission: Fomentar el desarrollo de industrias y comercios que reflejen los principios bíblicos de honestidad, calidad y servicio.
+  facebook: https://www.facebook.com/profile.php?id=61564464098362
+  leader:
+    name: Roberto Contreras
+    photo: placeholder.jpg
+  activities:
+    - Capacitación en emprendimiento
+    - Asesoría para negocios
+    - Ferias de productos
+    - Talleres de desarrollo económico
+  schedule: Según programación
 
 - id: evangelismo
   title: Evangelismo
