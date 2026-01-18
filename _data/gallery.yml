@@ -1,0 +1,42 @@
+# Gallery images for the church website
+# Each section contains images with their filename, alt text, and folder path
+
+general:
+  folder: slider
+  images:
+    - file: slide1.jpg
+      alt: Foto de la iglesia
+    - file: slide2.jpg
+      alt: Foto de la iglesia
+    - file: slide3.jpg
+      alt: Foto de la iglesia
+    - file: slide4.jpg
+      alt: Foto de la iglesia
+    - file: slide5.jpg
+      alt: Foto de la iglesia
+    - file: slide6.jpg
+      alt: Foto de la iglesia
+    - file: slide7.jpg
+      alt: Foto de la iglesia
+    - file: slide9.jpg
+      alt: Foto de la iglesia
+
+departments:
+  folder: departments
+  images:
+    - file: jovenes_union.jpg
+      alt: Departamento de Jóvenes
+    - file: familia_union.jpg
+      alt: Departamento de Familia
+    - file: ninhos_union.jpg
+      alt: Departamento de Niños
+    - file: musica_union.jpg
+      alt: Departamento de Música
+    - file: salud_union.jpg
+      alt: Departamento de Salud
+    - file: multimedia_union.jpg
+      alt: Departamento de Multimedia
+    - file: colportaje_union.jpg
+      alt: Departamento de Colportaje
+    - file: asistencia_social_union.jpg
+      alt: Departamento de Asistencia Social
