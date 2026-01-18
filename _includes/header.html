@@ -1,28 +1,23 @@
-<nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
+<nav id="navbar-section" class="navbar navbar-expand-lg navbar-dark navbar-sticky" style="background-color: #0A245E;" role="navigation">
   <div class="container">
 
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-        <span class="sr-only">Alternar navegación</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-spy" aria-controls="navbar-spy" aria-expanded="false" aria-label="Alternar navegación">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
-      <ul class="nav navbar-nav pull-right">
-        <li>
-          <a href="{{ site.baseurl }}/">Inicio</a>
+    <div id="navbar-spy" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.baseurl }}/">Inicio</a>
         </li>
-        <li>
-          <a href="{{ site.baseurl }}/about.html">Acerca de</a>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.baseurl }}/about.html">Acerca de</a>
         </li>
-        <li>
-          <a href="{{ site.baseurl }}/resources">Recursos</a>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.baseurl }}/resources">Recursos</a>
         </li>
-        <li>
-          <a href="{{ site.baseurl }}/contact.html"><span>Contacto</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.baseurl }}/contact.html">Contacto</a>
         </li>
       </ul>
     </div>

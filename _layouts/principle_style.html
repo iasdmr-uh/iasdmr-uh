@@ -1,9 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 {% include head.html %}
 {% include header.html %}
-{% include script.html %}
 
 <body>
 
@@ -12,14 +11,14 @@
     <!-- banner image -->
     {% if page.banner%}
     <div class="row container-kamn">
-      <img src="{{ site.baseurl }}{{ page.banner }}" class="blog-post" alt="Feature-img" align="right" width="100%">
+      <img src="{{ site.baseurl }}{{ page.banner }}" class="blog-post img-fluid" alt="Feature-img" width="100%">
     </div>
     {% endif %}
 
     <div class="row">
 
       <div class="col-md-3">
-        <div class="sidebar wow animated fadeInLeft">
+        <div class="sidebar">
           <h4>Índice</h4>
           <ul class="list-group">
             {% for principle in site.data.principles %}
@@ -30,7 +29,7 @@
         </div>
       </div>
 
-      <div class="col-md-9 wow animated fadeInRight">
+      <div class="col-md-9">
         <header class="principle-header">
           <h1>{{ page.title }}</h1>
         </header>
@@ -48,15 +47,15 @@
           {% endif %}
         {% endif %}
       {% endfor %}
-      
+
 
       </div>
     </div>
 
   </div>
 
-</body>
-
 {% include footer.html %}
+{% include script.html %}
+</body>
 
 </html>

@@ -14,7 +14,7 @@ animation:
 
 <div class="container">
     <div class="row">
-        <div class="col-md-3 wow animated fadeInLeft">
+        <div class="col-md-3">
             <div class="sidebar">
                 <h4>Índice</h4>
                 <ul class="list-group">
@@ -25,14 +25,15 @@ animation:
                 </ul>
             </div>
         </div>
-        <div class="col-md-9 wow animated fadeInRight">
+        <div class="col-md-9">
  <div class="row">
   {% for principle in site.data.principles %}
   <div class="col-md-4">
     <div class="card mb-4">
       <a id="principle{{ principle.id }}" href="{{ site.baseurl }}{{ principle.link }}">
         <img src="{{ site.baseurl }}/assets/img/principles/principle_{{ principle.id }}.png"
-             class="card-img-top" alt="Thumbnail for {{ principle.title }}">
+             class="card-img-top" alt="Thumbnail for {{ principle.title }}"
+             loading="lazy">
         <div class="card-body">
         </div>
       </a>

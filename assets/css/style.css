@@ -21,7 +21,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 
 .blog-title {
   color: #385A30;
-  font-family: "Lato";
+  font-family: 'Poppins', sans-serif;
   font-variant: small-caps;
 }
 
@@ -113,9 +113,8 @@ ul li {
   list-style: none;
 }
 
-h3.col-xs-12 {
+h3.col-12 {
   margin-top: -20px;
-
 }
 
 .content-space {
@@ -147,9 +146,10 @@ h3.col-xs-12 {
 
 
 .title-text {
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: .2px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -0.5px;
   font-size: 40px;
+  font-weight: 600;
 }
 
 .img-pad {
@@ -166,9 +166,17 @@ h3.col-xs-12 {
 }
 
 body {
-  font-size: 15px;
-  line-height: 24px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
   background: #F8FAFF;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 600;
+  line-height: 1.3;
 }
 
 a {
@@ -287,10 +295,10 @@ address {
 */
 .navbar-brand {
   z-index: 9999px;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   padding-top: 0px;
 }
 
@@ -310,10 +318,10 @@ address {
 }
 
 .banner-text {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: white;
-  font-size: 50px;
-
+  font-size: 48px;
+  font-weight: 600;
 }
 
 #banners {
@@ -350,15 +358,14 @@ address {
 }
 
 .header a.brand {
-
-  font-family: 'PT Sans', sans-serif;
-  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
   margin-top: 5px;
   display: inline-block;
   width: 270px;
   height: 96px;
   padding: 30px 10px;
-  /*background: url(../img/logo.png) 20px center no-repeat; */
 }
 
 @media (min-width: 50px) and (max-width: 768px) {
@@ -373,10 +380,10 @@ address {
 
 .paragraph-text {
   text-align: justify;
-  letter-spacing: 1px;
+  letter-spacing: 0;
   font-size: 16px;
-  font-family: 'Arial', sans-serif;
-  line-height: 24px;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
 }
 
 .left2 {
@@ -403,10 +410,11 @@ address {
 
 p.blog-text {
   font-size: 16px;
-  letter-spacing: .1px;
-  font-family: 'Arial';
+  letter-spacing: 0;
+  font-family: 'Inter', sans-serif;
   text-align: justify;
   text-justify: inter-word;
+  line-height: 1.7;
 }
 
 .btn-sm {
@@ -551,10 +559,11 @@ p.blog-text {
 
 footer .widget h4 {
   margin-top: 20px;
-  font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
+  font-weight: 600;
   text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .7);
+  letter-spacing: 0.5px;
 }
 
 footer .widget p {
@@ -717,8 +726,9 @@ footer h3 {
 }
 
 .lib-header {
-  font-family: 'lato';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
+  font-weight: 600;
 }
 
 /*
