@@ -11,6 +11,43 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 
 /*
 * ==========================================================================
+* Custom Fonts (Official Branding)
+* ==========================================================================
+*/
+@font-face {
+  font-family: 'BW Modelica';
+  src: url('../fonts/BwModelica-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BW Modelica';
+  src: url('../fonts/BwModelica-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BW Modelica';
+  src: url('../fonts/BwModelica-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../fonts/NotoSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*
+* ==========================================================================
 * Global
 * ==========================================================================
 */
@@ -166,21 +203,21 @@ h3.col-12 {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  background: #F8FAFF;
+  background: #F2F1EF;
   color: #333;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-weight: 600;
+  font-family: 'BW Modelica', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
   line-height: 1.3;
 }
 
 a {
-  color: #EFD19F;
+  color: #F1BE48;
   text-decoration: none;
   -o-transition: all .3s;
   -moz-transition: all .3s;
@@ -189,7 +226,7 @@ a {
 }
 
 a:hover {
-  color: #888;
+  color: #0A245E;
   text-decoration: none;
 }
 
@@ -282,10 +319,20 @@ address {
 * Navbar Nav Links
 * ==========================================================================
 */
-.navbar-nav>li>a {
-  padding: 10px 15px;
-  margin: 5px 5px;
-  border-radius: 4px;
+.navbar-nav .nav-link {
+  padding: 12px 16px;
+  margin: 4px 4px;
+  border-radius: 6px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.9);
+  transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
 }
 
 /*
@@ -484,8 +531,8 @@ p.blog-text {
 */
 .services-section {
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .services-section .services-header {
@@ -539,9 +586,15 @@ p.blog-text {
 }
 
 .services-group {
-  padding: 10px;
+  padding: 25px 20px;
   background: #0A245E;
   color: #F2F1EF;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.services-group:hover {
+  transform: translateY(-4px);
 }
 
 .service-icon {
@@ -550,68 +603,113 @@ p.blog-text {
 
 
 /* ----- Footer ----- */
-.footer-widget {
-  color: white;
-  margin-top: 55px;
-  position: relative;
-}
-
-
-footer .widget h4 {
-  margin-top: 20px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-footer .widget p {
-  line-height: 24px;
-}
-
-footer .widget i {
-  padding-right: 7px;
-}
-
 footer {
   width: 100%;
-  position: relative;
-  margin-top: 40px;
-  left: 0;
-  right: 0;
+  margin-top: 60px;
+}
+
+.footer-main {
   background: #0A245E;
-  bottom: 0px;
+  color: #FFFFFF;
+  padding: 60px 0 40px;
 }
 
-footer h3 {
-  color: #dadada;
+.footer-main h4 {
+  font-family: 'BW Modelica', 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #F1BE48;
+}
+
+.footer-main h5 {
+  font-family: 'BW Modelica', 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   margin-bottom: 20px;
+  color: #FFFFFF;
 }
 
-.footer-contact {
-  color: white;
+.footer-tagline {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  line-height: 1.6;
 }
 
-
-/*Social Buttons */
-#social-icons {
-  font-size: 22px;
+/* Footer Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-#social-icons .btn-group {
-  color: white;
-  margin-right: 15px;
+.footer-links li {
+  margin-bottom: 10px;
 }
 
-#social-icons .btn-group:hover {
-  color: #ffffff;
+.footer-links a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.copyright {
-  color: #fff;
-  padding: 20px 0px 10px 0px;
-  background-color: #7E7E82;
+.footer-links a:hover {
+  color: #F1BE48;
+}
+
+/* Footer Contact List */
+.footer-contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact-list li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-contact-list i {
+  color: #F1BE48;
+  width: 20px;
+}
+
+/* Social Icons */
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: #FFFFFF;
+  margin-right: 10px;
+  transition: background 0.3s ease, color 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.social-icons a:hover {
+  background: #F1BE48;
+  color: #0A245E;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background: #061A42;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /*
@@ -904,27 +1002,43 @@ Custom
 
 .sidebar .list-group-item {
   background: #0A245E;
-  /* Azul oscuro */
   color: #F2F1EF;
-  /* Color claro para el texto */
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  border-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
 }
 
 .sidebar .list-group-item:hover,
 .sidebar .list-group-item:focus {
-  background: #528C7C;
-  /* Color más claro al pasar el cursor */
+  background: #F1BE48;
+  color: #0A245E;
+}
+
+.sidebar .list-group-item a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .card {
   margin-bottom: 20px;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
 }
 
 .card-body {
-  background: #F2F1EF;
-  /* Fondo claro */
+  background: #FFFFFF;
   color: #0A245E;
-  /* Texto oscuro */
-  padding: 15px;
+  padding: 20px;
 }
 
 .card-title {
@@ -959,17 +1073,39 @@ Custom
   text-overflow: ellipsis;
 }
 .btn-custom-pdf {
-  background-color: #00166c;
+  background-color: #0A245E;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 24px;
   display: inline-block;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 6px;
   margin-top: 50px;
+  font-weight: 500;
+  min-height: 44px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn-custom-pdf:hover {
-  background-color: #002a99;
+  background-color: #F1BE48;
   text-decoration: none;
-  color: white;
+  color: #0A245E;
+  transform: translateY(-1px);
+}
+
+/* Services section link styling */
+.services-more a {
+  display: inline-block;
+  background-color: #F1BE48;
+  color: #0A245E;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  min-height: 44px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.services-more a:hover {
+  background-color: #FFFFFF;
+  color: #0A245E;
+  transform: translateY(-1px);
 }

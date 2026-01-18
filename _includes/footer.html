@@ -1,41 +1,57 @@
-<!-- Pie de página -->
-<footer> 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <h3><i class="fa fa-map-marker"></i> Contacto:</h3>
-        <p class="footer-contact">
-          {{ site.company_name }} <br>
-          Teléfono: {{ site.telephone_number }} <br>
-          Correo electrónico: {{ site.company_email }}<br>
-        </p>
-      </div>
-      <div class="col-md-4">
-        <h3><i class="fa fa-external-link"></i> Enlaces</h3>
-        <p><a href="{{ site.baseurl }}/about"> Acerca de ( Quiénes somos )</a></p>
-        <p><a href="{{ site.baseurl }}/contact"> Contacto ( No dudes en contactarnos )</a></p>
-        <p><a href="{{ site.baseurl }}/blog"> Blog ( Infórmate )</a></p>
-      </div>
-      <div class="col-md-4">
-        <h3><i class="fa fa-heart"></i> Socialízate</h3>
-        <div id="social-icons">
-          {% if site.youtube_link %}
-            <a href="{{ site.youtube_link }}" class="btn-group youtube">
-              <i class="fa fa-youtube-square"></i>
-            </a>
-          {% endif %}
-
-          {% if site.facebook_link %}
-            <a href="{{ site.facebook_link }}" class="btn-group facebook">
-              <i class="fa fa-facebook"></i>
-            </a>
-          {% endif %}
+<!-- Footer -->
+<footer>
+  <div class="footer-main">
+    <div class="container">
+      <div class="row">
+        <!-- Column 1: Logo/Branding -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h4>Unión Hondureña</h4>
+          <p class="footer-tagline">Iglesia Adventista del Séptimo Día<br>Movimiento de Reforma</p>
         </div>
-      </div>    
+
+        <!-- Column 2: Quick Links -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5>Enlaces Rápidos</h5>
+          <ul class="footer-links">
+            <li><a href="{{ site.baseurl }}/principles">Principios de Fe</a></li>
+            <li><a href="{{ site.baseurl }}/ministry">Ministerio</a></li>
+            <li><a href="{{ site.baseurl }}/resources">Recursos</a></li>
+            <li><a href="{{ site.baseurl }}/about.html">Acerca de</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5>Contacto</h5>
+          <ul class="footer-contact-list">
+            <li><i class="fa-solid fa-phone"></i> {{ site.telephone_number }}</li>
+            <li><i class="fa-solid fa-envelope"></i> {{ site.company_email }}</li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Social -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Síguenos</h5>
+          <div class="social-icons">
+            {% if site.facebook_link %}
+            <a href="{{ site.facebook_link }}" target="_blank" rel="noopener" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            {% endif %}
+            {% if site.youtube_link %}
+            <a href="{{ site.youtube_link }}" target="_blank" rel="noopener" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="copyright text center">
-    <p>&copy; Copyright {{ site.time | date: '%Y' }}, <a href="#">Unión Hondureña</a>. <br>Tema por <a href="https://melvinchng.github.io/" target="_blank">Melvin Ch'ng</a></p>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; {{ site.time | date: '%Y' }} Unión Hondureña. Todos los derechos reservados.</p>
+    </div>
   </div>
 </footer>
