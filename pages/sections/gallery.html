@@ -1,20 +1,19 @@
 ---
 layout: default_style
-title: Galeria
+title: Galería
 permalink: /gallery
 description: Fotos de nuestros eventos, actividades y comunidad de fe.
 ---
 
 <div class="gallery-intro">
-  <p>Descubre momentos especiales de nuestra comunidad de fe a traves de estas imagenes.</p>
+  <p>Descubre momentos especiales de nuestra comunidad de fe a través de estas imágenes.</p>
 </div>
 
 <div class="gallery-grid">
-  {% assign gallery_images = "slide1.jpg,slide2.jpg,slide3.jpg,slide4.jpg,slide5.jpg,slide6.jpg,slide7.jpg,slide9.jpg" | split: "," %}
-  {% for img in gallery_images %}
+  {% for img in site.data.gallery.general.images %}
   <div class="gallery-item">
-    <a href="{{ site.baseurl }}/assets/img/slider/{{ img }}" target="_blank">
-      <img src="{{ site.baseurl }}/assets/img/slider/{{ img }}" alt="Foto de la iglesia" loading="lazy">
+    <a href="{{ site.baseurl }}/assets/img/{{ site.data.gallery.general.folder }}/{{ img.file }}" target="_blank">
+      <img src="{{ site.baseurl }}/assets/img/{{ site.data.gallery.general.folder }}/{{ img.file }}" alt="{{ img.alt }}" loading="lazy">
     </a>
   </div>
   {% endfor %}
@@ -23,18 +22,17 @@ description: Fotos de nuestros eventos, actividades y comunidad de fe.
 <h3 class="gallery-section-title">Departamentos</h3>
 
 <div class="gallery-grid">
-  {% assign dept_images = "jovenes_union.jpg,familia_union.jpg,ninhos_union.jpg,musica_union.jpg,salud_union.jpg,multimedia_union.jpg,colportaje_union.jpg,asistencia_social_union.jpg" | split: "," %}
-  {% for img in dept_images %}
+  {% for img in site.data.gallery.departments.images %}
   <div class="gallery-item">
-    <a href="{{ site.baseurl }}/assets/img/departments/{{ img }}" target="_blank">
-      <img src="{{ site.baseurl }}/assets/img/departments/{{ img }}" alt="Departamento de la iglesia" loading="lazy">
+    <a href="{{ site.baseurl }}/assets/img/{{ site.data.gallery.departments.folder }}/{{ img.file }}" target="_blank">
+      <img src="{{ site.baseurl }}/assets/img/{{ site.data.gallery.departments.folder }}/{{ img.file }}" alt="{{ img.alt }}" loading="lazy">
     </a>
   </div>
   {% endfor %}
 </div>
 
 <div class="gallery-cta">
-  <p>Siguenos en nuestras redes sociales para ver mas fotos y videos de nuestras actividades.</p>
+  <p>Síguenos en nuestras redes sociales para ver más fotos y videos de nuestras actividades.</p>
   <div class="gallery-social">
     <a href="{{ site.facebook_link }}" target="_blank" class="btn btn-social-fb">
       <i class="fa-brands fa-facebook-f"></i> Facebook
