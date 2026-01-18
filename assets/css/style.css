@@ -72,6 +72,10 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
   position: relative;
 }
 
+#carousel-section {
+  margin-top: 20px;
+}
+
 .section-global-wrapper:before,
 .section-global-wrapper:after {
   content: " ";
@@ -1380,6 +1384,26 @@ footer {
 /* Carousel Caption with gradient overlay */
 .carousel-item {
   position: relative;
+  overflow: hidden;
+}
+
+/* Ken Burns zoom animation */
+@keyframes kenburns {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.carousel-item img {
+  animation: kenburns 8s ease-out forwards;
+}
+
+.carousel-item:not(.active) img {
+  animation: none;
+  transform: scale(1);
 }
 
 .carousel-item::after {
