@@ -1,55 +1,45 @@
-<!doctype html>
-<html lang="es">
+---
+layout: base
+---
 
-{% include head.html %}
-
-<body>
-  {% include header.html %}
-
-  <!-- Page Hero -->
-  <div class="page-hero">
-    <div class="container">
-      <span class="page-hero-accent"></span>
-      <h1 class="page-hero-title">{{ page.title }}</h1>
-      {% if page.description %}
-      <p class="page-hero-subtitle">{{ page.description | strip_html }}</p>
-      {% endif %}
-    </div>
-  </div>
-
+<!-- Page Hero -->
+<div class="page-hero">
   <div class="container">
-
-    <div class="row">
-      <!-- side bar -->
-      {% if page.sidebar_title and page.sidebar_content%}
-      <div class="col-md-3">
-        <div class="sidebar">
-          <h4>{{ page.sidebar_title }}</h4>
-          {{ page.sidebar_content}}
-        </div>
-      </div>
-      {% endif %}
-
-      <!-- content -->
-      {% if page.sidebar_title and page.sidebar_content%}
-      <div class="col-md-9">
-        <div class="row">
-          {{ content }}
-        </div>
-      </div>
-      {% else %}
-
-      <div class="col-md-12">
-        <div class="row">
-          {{ content }}
-        </div>
-      </div>
-      {% endif %}
-    </div>
+    <span class="page-hero-accent"></span>
+    <h1 class="page-hero-title">{{ page.title }}</h1>
+    {% if page.description %}
+    <p class="page-hero-subtitle">{{ page.description | strip_html }}</p>
+    {% endif %}
   </div>
+</div>
 
-  {% include footer.html %}
-  {% include script.html %}
-</body>
+<div class="container">
 
-</html>
+  <div class="row">
+    <!-- side bar -->
+    {% if page.sidebar_title and page.sidebar_content%}
+    <div class="col-md-3">
+      <div class="sidebar">
+        <h4>{{ page.sidebar_title }}</h4>
+        {{ page.sidebar_content}}
+      </div>
+    </div>
+    {% endif %}
+
+    <!-- content -->
+    {% if page.sidebar_title and page.sidebar_content%}
+    <div class="col-md-9">
+      <div class="row">
+        {{ content }}
+      </div>
+    </div>
+    {% else %}
+
+    <div class="col-md-12">
+      <div class="row">
+        {{ content }}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
