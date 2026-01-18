@@ -621,7 +621,7 @@ p.blog-text {
 */
 .cta-section {
   padding: 80px 0;
-  background: linear-gradient(135deg, #0A245E 0%, #0F3999 50%, #3E80F2 100%);
+  background: #0A245E;
   color: white;
 }
 
@@ -1265,6 +1265,9 @@ Custom
   color: white;
   padding: 20px;
   margin-bottom: 20px;
+  position: sticky;
+  top: 20px;
+  border-radius: 8px;
 }
 
 .sidebar h4 {
@@ -1493,11 +1496,11 @@ html {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
-/* Circular staff photo */
+/* Rounded square staff photo */
 .staff-photo {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 12px;
   object-fit: cover;
   object-position: top center;
   margin-bottom: 20px;
@@ -1509,7 +1512,7 @@ html {
 .staff-placeholder {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 12px;
   margin: 0 auto 20px;
   border: 4px solid #F2F1EF;
   background-color: #E8E8E8;
