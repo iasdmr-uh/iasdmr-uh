@@ -9,7 +9,7 @@ Reference: ES brandbook.pdf (Seventh Day Adventist Reform Movement)
 | Primary Blue | `#0A245E` | 10, 36, 94 | Main brand color, navbar, footer |
 | Secondary Blue | `#3E80F2` | 62, 128, 242 | Links, highlights |
 | Dark Blue | `#0F3999` | 15, 57, 153 | Sidebar, accents |
-| Gold Accent | `#F1BE48` | 241, 190, 72 | Buttons, CTAs, highlights |
+| Gold Accent | `#D4AF37` | 212, 175, 55 | Buttons, CTAs, highlights |
 | Beige | `#EFD19F` | 239, 209, 159 | Secondary accent |
 | Coral | `#FF8D6D` | 255, 141, 109 | Alerts, emphasis |
 | Gray | `#7E7E82` | 126, 126, 130 | Muted text |

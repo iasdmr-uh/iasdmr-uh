@@ -1,42 +1,38 @@
-# Business Jekyll Theme
+# Unión Hondureña Website
 
-Business Jekyll Theme is a theme that is designed to be used for small and medium business. It is designed by a team from [Technext](https://github.com/technext/). The theme is then ported over by [Melvin Ch'ng](http://melvinchng.github.io) for Jekyll support. The original source code can be obainted from Technext's [repository](https://github.com/technext/office)
+Official website for the Unión Hondureña of the Seventh Day Adventist Reform Movement (Iglesia Adventista del Séptimo Día Movimiento de Reforma).
 
-Unlike most Jekyll Themes, Business Jekyll Theme is not meant to be a single page theme. This theme is a package that you can use for your business website or promote certain project. I reorganized all the files and make it Jekyll friendly.
+## Quick Start
 
-Big thanks to the creator of Office as this theme would not be possible without their hard work! You are always welcome to contribute to this repository to make it better!
-
-**Example Site**
-- [Business Jekyll Theme](https://business-jekyll-theme.github.io)
-
-**Example Site From The Original Creator**
-- [Office Template](http://demo.themewagon.com/preview/office-responsive-multipage-bootstrap-template)
-
-## Feature
-- Responsive layout
-- CSS Framework - Bootstrap 3
-- Beautiful icons by Fontawesome
-- Clean, simple and elegant
-- Multi page Template
-- Well commented and structured coding
-- Easy to use
-- It's Free!
-
-## Note
-I removed certain features from the original theme packages as we do not really need it. I modified the original source code slightly to make it more mobile friendly and reusable. 
-
-## Installation
-1. For first time user, you have to install Ruby and Rails. If you do not have Ruby on Rails installed, you may follow [this tutorial](http://melvinchng.github.io/rails/RubyOnRailsInstallation.html) that I wrote for Windows, Linux, and MacOS (installation videos are included).
-2. Install Jekyll by using the command `gem install jekyll`.
-3. Start your localhost server by using the command `jekyll serve --config _config.yml,_config.dev.yml`. Make sure that you are at the root directory of your folder before using this command.
-4. Your site should be accessible at `localhost:4000`.
-5. For additional information about Jekyll, refer to the [official website](http://jekyllrb.com/). 
-
-## How to Run
-
+```bash
+docker compose up
 ```
-sudo docker run --rm -ti -v $(pwd):/srv -w /srv --net host --entrypoint /bin/sh ruby:2.7
-gem install bundler:1.16.0
-bundle install
-bundle exec jekyll serve --config _config.yml,_config.dev.yml
-```
+
+Open http://localhost:4000 and you're good to go. The site rebuilds automatically when you edit files.
+
+## Project Structure
+
+- `_data/` - Staff directory, gallery images, principles list (YAML files)
+- `_layouts/` - Page templates (home, default, principles, etc.)
+- `_principles/` - The 25 fundamental beliefs
+- `pages/` - Main site pages (about, contact, departments, gallery)
+- `assets/` - Images, CSS, fonts
+- `_config.yml` - Site settings (contact info, social links)
+
+## Making Changes
+
+Most content updates happen in `_data/` files or `_config.yml`. Check `docs/content-guide.md` for specifics.
+
+For deeper changes, see the other docs:
+
+- [Getting Started](docs/getting-started.md) - Full setup guide
+- [Content Guide](docs/content-guide.md) - How to update website content
+- [Architecture](docs/architecture.md) - How Jekyll and this project work
+- [Deployment](docs/deployment.md) - Getting changes live
+- [Branding](docs/branding.md) - Colors, fonts, logo guidelines
+
+## Links
+
+- **Live site:** https://argushn.github.io/union-website
+- **Facebook:** [Unión Hondureña](https://www.facebook.com/profile.php?id=100064555941818)
+- **YouTube:** [@unionhondurenaasdmr8339](https://www.youtube.com/@unionhondurenaasdmr8339)
