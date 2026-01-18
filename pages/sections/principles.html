@@ -3,44 +3,42 @@ layout: default_style
 title: Principios de Fe
 permalink: /principles
 description: |
-    <em>Explora los fundamentos de nuestra creencia, basados en la Biblia y
-        centrados en la restauración, la transformación y la unidad a través del amor de Dios.
-    </em>
-    Durante la Asamblea de la Conferencia General en Gotha (Alemania) del 14-20 de julio de 1925.
-sidebar_title:
-sidebar_content:
-animation:
+    Explora los 25 fundamentos de nuestra creencia, basados en la Biblia y
+    centrados en la restauración, la transformación y la unidad a través del amor de Dios.
 ---
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-3">
-            <div class="sidebar">
-                <h4>Índice</h4>
-                <ul class="list-group">
-                    {% for principle in site.data.principles %}
-                    <li class="list-group-item"><a href="{{ site.baseurl }}{{ principle.link }}">{{ principle.id }}. {{
-                            principle.title }}</a></li>
-                    {% endfor %}
-                </ul>
-            </div>
+<div class="row">
+    <div class="col-lg-3 mb-4">
+        <div class="principles-sidebar">
+            <h4>¿Te interesa?</h4>
+            <a href="{{ site.baseurl }}/contact.html" class="sidebar-action">
+                <i class="fa-solid fa-book-open"></i>
+                Estudiar la Biblia
+            </a>
+            <a href="{{ site.baseurl }}/contact.html" class="sidebar-action">
+                <i class="fa-solid fa-location-dot"></i>
+                Visitar una Iglesia
+            </a>
+            <a href="{{ site.baseurl }}/contact.html" class="sidebar-action">
+                <i class="fa-solid fa-comments"></i>
+                Hacer una Pregunta
+            </a>
+            <hr>
+            <a href="{{ site.baseurl }}/assets/pdf/principios_de_fe.pdf" class="sidebar-action sidebar-action-secondary" target="_blank">
+                <i class="fa-solid fa-download"></i>
+                Descargar PDFs
+            </a>
         </div>
-        <div class="col-md-9">
- <div class="row">
-  {% for principle in site.data.principles %}
-  <div class="col-md-4">
-    <div class="card mb-4">
-      <a id="principle{{ principle.id }}" href="{{ site.baseurl }}{{ principle.link }}">
-        <img src="{{ site.baseurl }}/assets/img/principles/principle_{{ principle.id }}.png"
-             class="card-img-top" alt="Thumbnail for {{ principle.title }}"
-             loading="lazy">
-        <div class="card-body">
-        </div>
-      </a>
     </div>
-  </div>
-  {% endfor %}
-</div>
+    <div class="col-lg-9">
+        <div class="principles-grid">
+            {% for principle in site.data.principles %}
+            <a href="{{ site.baseurl }}{{ principle.link }}" class="principle-card">
+                <img src="{{ site.baseurl }}/assets/img/principles/principle_{{ principle.id }}.png"
+                     alt="{{ principle.title }}"
+                     loading="lazy">
+            </a>
+            {% endfor %}
         </div>
     </div>
 </div>
