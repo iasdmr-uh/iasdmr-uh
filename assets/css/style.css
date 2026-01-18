@@ -11,6 +11,18 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 
 /*
 * ==========================================================================
+* CSS Custom Properties (Design Tokens)
+* ==========================================================================
+*/
+:root {
+  --color-primary: #0A245E;
+  --color-accent: #F1BE48;
+  --color-background: #F2F1EF;
+  --color-text-muted: #7E7E82;
+}
+
+/*
+* ==========================================================================
 * Custom Fonts (Official Branding)
 * ==========================================================================
 */
@@ -63,7 +75,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 }
 
 .main-content {
-  margin-top: 20px;
+  margin-top: 80px;
   padding-bottom: 50px;
   text-align: left;
 }
@@ -195,10 +207,6 @@ h3.col-12 {
 
 .img-pad {
   padding-right: 23px;
-}
-
-.main-content {
-  margin-top: 80px;
 }
 
 .white-text {
@@ -348,7 +356,7 @@ address {
 * ==========================================================================
 */
 .navbar-brand {
-  z-index: 9999px;
+  z-index: 9999;
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   font-weight: 600;
@@ -2472,8 +2480,9 @@ html {
 
 .department-card img {
   width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: cover;
+  object-position: top;
 }
 
 .department-card-body {
