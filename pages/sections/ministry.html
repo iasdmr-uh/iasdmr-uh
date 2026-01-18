@@ -1,122 +1,106 @@
 ---
 layout: default_style
+title: Ministerio
 permalink: /ministry
-description: |
-    <div class="row container-kamn">
-        <img src="{{ site.baseurl }}/assets/img/slider/slide1.jpg" class="blog-post" alt="Feature-img" align="right" width="100%">
-    </div>
-    <em>
-        Te invitamos a conocer a nuestros líderes espirituales, quienes guían y apoyan a nuestra comunidad con
-        dedicación y amor.
-    </em>
-sidebar_title: Contexto
-sidebar_content:
+description: Te invitamos a conocer a nuestros líderes espirituales, quienes guían y apoyan a nuestra comunidad con dedicación y amor.
+sidebar_title: Índice
+sidebar_content: |
+    <ul class="list-group">
+      <li class="list-group-item">
+        <a href="#ministros">Ministros (2)</a>
+      </li>
+      <li class="list-group-item">
+        <a href="#pastores">Pastores (7)</a>
+      </li>
+      <li class="list-group-item">
+        <a href="#obreros">Obreros (13)</a>
+      </li>
+    </ul>
 ---
-<div class="container">
-  <div class="row">
 
-    <div class="col-md-3">
-      <div class="sidebar">
-        <h4>Índice</h4>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <a href="#" onclick="showSection('ministros')">Ministros</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#" onclick="showSection('pastores')">Pastores</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#" onclick="showSection('workers')">Obreros</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="col-md-9">
-
-{% assign ministers = site.data.ministers.ministers %}
-<div id="ministros" class="services-header" style="display:block;">
-  <header class="principle-header"><h2>Ministros</h2></header>
-
-  {% for minister in ministers %}
-    {% assign mod = forloop.index0 | modulo: 2 %}
-    {% if mod == 0 %}<div class="row">{% endif %}
-
-    <div class="col-12 col-md-6">
-      <div class="card mb-4">
+<!-- Ministros Section -->
+<section id="ministros" class="staff-section">
+  <h2 class="staff-section-header">Ministros</h2>
+  <div class="staff-grid row">
+    {% for minister in site.data.ministers.ministers %}
+    <div class="col-lg-4 col-md-6 col-12">
+      <div class="staff-card">
+        {% if minister.photo %}
         <img src="{{ site.baseurl }}/assets/photos-staff/ministers/{{ minister.photo }}"
-             class="card-img-top" alt="Foto de {{ minister.name }}">
-        <div class="card-body text-center">
-          <h5 class="card-title">{{ minister.name }}</h5>
-          <p class="card-text"><em>{{ minister.state }}</em></p>
+             class="staff-photo"
+             loading="lazy"
+             alt="Foto de {{ minister.name }}"
+             onerror="this.onerror=null; this.src='{{ site.baseurl }}/assets/img/placeholder-person.svg';">
+        {% else %}
+        <div class="staff-placeholder">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <circle cx="50" cy="35" r="20" fill="#BDBDBD"/>
+            <path d="M50 60 C25 60 15 80 15 95 L85 95 C85 80 75 60 50 60" fill="#BDBDBD"/>
+          </svg>
         </div>
+        {% endif %}
+        <h5 class="staff-name">{{ minister.name }}</h5>
+        <p class="staff-role">{{ minister.state }}</p>
       </div>
     </div>
-
-    {% assign mod2 = forloop.index0 | modulo: 2 %}
-    {% if mod2 == 1 or forloop.last %}</div>{% endif %}
-  {% endfor %}
-</div>
-
-{% assign pastors = site.data.ministers.pastors %}
-<div id="pastores" class="services-header" style="display:none;">
-  <header class="principle-header"><h2>Pastores</h2></header>
-
-  {% for pastor in pastors %}
-    {% assign mod = forloop.index0 | modulo: 2 %}
-    {% if mod == 0 %}<div class="row">{% endif %}
-
-    <div class="col-12 col-md-6">
-      <div class="card mb-4">
-        <img src="{{ site.baseurl }}/assets/photos-staff/pastors/{{ pastor.photo }}"
-             class="card-img-top" alt="Foto de {{ pastor.name }}">
-        <div class="card-body text-center">
-          <h5 class="card-title">{{ pastor.name }}</h5>
-          <p class="card-text"><em>{{ pastor.state }}</em></p>
-        </div>
-      </div>
-    </div>
-
-    {% assign mod2 = forloop.index0 | modulo: 2 %}
-    {% if mod2 == 1 or forloop.last %}</div>{% endif %}
-  {% endfor %}
-</div>
-
-{% assign workers = site.data.ministers.workers %}
-<div id="workers" class="services-header" style="display:none;">
-  <header class="principle-header"><h2>Obreros</h2></header>
-
-  {% for worker in workers %}
-    {% assign mod = forloop.index0 | modulo: 2 %}
-    {% if mod == 0 %}<div class="row">{% endif %}
-
-    <div class="col-12 col-md-6">
-      <div class="card mb-4">
-        <img src="{{ site.baseurl }}/assets/photos-staff/workers/{{ worker.photo }}"
-             class="card-img-top" alt="Foto de {{ worker.name }}">
-        <div class="card-body text-center">
-          <h5 class="card-title">{{ worker.name }}</h5>
-          <p class="card-text"><em>{{ worker.state }}</em></p>
-        </div>
-      </div>
-    </div>
-
-    {% assign mod2 = forloop.index0 | modulo: 2 %}
-    {% if mod2 == 1 or forloop.last %}</div>{% endif %}
-  {% endfor %}
-</div>
-    </div>
+    {% endfor %}
   </div>
-</div>
+</section>
 
+<!-- Pastores Section -->
+<section id="pastores" class="staff-section">
+  <h2 class="staff-section-header">Pastores</h2>
+  <div class="staff-grid row">
+    {% for pastor in site.data.ministers.pastors %}
+    <div class="col-lg-4 col-md-6 col-12">
+      <div class="staff-card">
+        {% if pastor.photo %}
+        <img src="{{ site.baseurl }}/assets/photos-staff/pastors/{{ pastor.photo }}"
+             class="staff-photo"
+             loading="lazy"
+             alt="Foto de {{ pastor.name }}"
+             onerror="this.onerror=null; this.src='{{ site.baseurl }}/assets/img/placeholder-person.svg';">
+        {% else %}
+        <div class="staff-placeholder">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <circle cx="50" cy="35" r="20" fill="#BDBDBD"/>
+            <path d="M50 60 C25 60 15 80 15 95 L85 95 C85 80 75 60 50 60" fill="#BDBDBD"/>
+          </svg>
+        </div>
+        {% endif %}
+        <h5 class="staff-name">{{ pastor.name }}</h5>
+        <p class="staff-role">{{ pastor.state }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
 
-<script>
-  function showSection(sectionId) {
-    const sections = ['ministros', 'pastores', 'workers'];
-    sections.forEach(id => {
-      const el = document.getElementById(id);
-      if (el) { el.style.display = (id === sectionId) ? 'block' : 'none'; }
-    });
-    document.querySelector('.col-md-9').scrollIntoView({behavior: 'smooth'});
-  }
-</script>
+<!-- Obreros Section -->
+<section id="obreros" class="staff-section">
+  <h2 class="staff-section-header">Obreros</h2>
+  <div class="staff-grid row">
+    {% for worker in site.data.ministers.workers %}
+    <div class="col-lg-4 col-md-6 col-12">
+      <div class="staff-card">
+        {% if worker.photo %}
+        <img src="{{ site.baseurl }}/assets/photos-staff/workers/{{ worker.photo }}"
+             class="staff-photo"
+             loading="lazy"
+             alt="Foto de {{ worker.name }}"
+             onerror="this.onerror=null; this.src='{{ site.baseurl }}/assets/img/placeholder-person.svg';">
+        {% else %}
+        <div class="staff-placeholder">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <circle cx="50" cy="35" r="20" fill="#BDBDBD"/>
+            <path d="M50 60 C25 60 15 80 15 95 L85 95 C85 80 75 60 50 60" fill="#BDBDBD"/>
+          </svg>
+        </div>
+        {% endif %}
+        <h5 class="staff-name">{{ worker.name }}</h5>
+        <p class="staff-role">{{ worker.state }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

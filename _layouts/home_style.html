@@ -67,89 +67,65 @@
     <!-- End #carousel-section -->
 
 
-    <!-- Begin #services-section -->
-    <section id="services" class="services-section section-global-wrapper">
-        <div class="container">
-            <!-- Services Hero Banner -->
-            <div class="services-hero">
-                <div class="services-hero-overlay"></div>
-                <div class="services-hero-content">
-                    <span class="services-header-accent"></span>
-                    <h2 class="services-header-title">Conoce Nuestra Comunidad</h2>
-                    <p class="services-header-body">Descubre las diferentes formas de conectar, servir y crecer espiritualmente con nosotros.</p>
-                </div>
-            </div>
-
-            <!-- Begin Services Row 1 -->
-            <div class="row services-row services-row-head services-row-1">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-12">
-                    <div class="services-group">
-                        <p class="services-icon"><span class="fa-solid fa-book-bible fa-5x"></span></p>
-                        <h4 class="services-title">Principios de Fe</h4>
-                        <p class="services-body">Nuestros principios de fe son los cimientos que guían nuestras
-                            creencias y acciones.</p>
-                        <p class="services-more"><a href="{{ site.baseurl }}/principles">Descubre Más</a></p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-4 col-12">
-                    <div class="services-group">
-                        <p class="services-icon"><i class="fa-solid fa-person-praying fa-5x"></i></p>
-                        <h4 class="services-title">Ministerio</h4>
-                        <p class="services-body">Dedicados a velar por las necesidades espirituales de la congregación.
-                        </p>
-                        <p class="services-more"><a href="{{ site.baseurl }}/ministry">Descubre Más</a></p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-4 col-12">
-                    <div class="services-group">
-                        <p class="services-icon"><i class="fa-solid fa-sitemap fa-5x"></i></p>
-                        <h4 class="services-title">Departamentos</h4>
-                        <p class="services-body">Conoce nuestra organizativa y estructura de trabajo.</p>
-                        <p class="services-more"><a href="{{ site.baseurl }}/departments">Descubre Más</a></p>
-                    </div>
-                </div>
-            </div>
-            <!-- End Serivces Row 1 -->
-
-            <!-- Begin Services Row 2 -->
-            <div class="row services-row services-row-tail services-row-2">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-12">
-                    <div class="services-group">
-                        <p class="services-icon"><span class="fa-solid fa-photo-film fa-5x"></span></p>
-                        <h4 class="services-title">Galería</h4>
-                        <p class="services-body">Explora fotos y videos de nuestros eventos y actividades comunitarias.
-                        </p>
-                        <p class="services-more"><a href="{{ site.baseurl }}/gallery">Descubre Más</a></p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-4 col-12">
-                    <div class="services-group">
-                        <p class="services-icon"><i class="fa-solid fa-heart fa-5x"></i></p>
-                        <h4 class="services-title">Voluntariado</h4>
-                        <p class="services-body">Únete a nosotros participando en nuestras iniciativas de voluntariado.
-                        </p>
-                        <p class="services-more"><a href="{{ site.baseurl }}/volunteering">Descubre Más</a></p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-4 col-12">
-                    <div class="services-group">
-                        <p class="services-icon"><i class="fa-solid fa-hand-holding-dollar fa-5x"></i></p>
-                        <h4 class="services-title">Donaciones</h4>
-                        <p class="services-body">Contribuye a nuestras causas y ayuda a apoyar nuestras misiones y
-                            proyectos.</p>
-                        <p class="services-more"><a href="{{ site.baseurl }}/donations">Descubre Más</a></p>
-                    </div>
-                </div>
-            </div>
-            <!-- End Serivces Row 2 -->
-
+    <!-- Begin Intro Section -->
+    <section class="intro-section">
+        <div class="container text-center">
+            <h2>Bienvenido a la Unión Hondureña</h2>
+            <p>Somos parte del Movimiento de Reforma de la Iglesia Adventista del Séptimo Día, comprometidos con las verdades bíblicas y el mensaje de los tres ángeles.</p>
         </div>
     </section>
-    <!-- End #services-section -->
+    <!-- End Intro Section -->
+
+    <!-- Begin Action Cards Section -->
+    <section class="action-cards-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12 mb-4">
+                    <div class="action-card">
+                        <div class="action-card-icon">
+                            <i class="fa-solid fa-book-bible"></i>
+                        </div>
+                        <h3>Nuestras Creencias</h3>
+                        <p>Conoce los 25 principios de fe que guían nuestra doctrina y práctica cristiana.</p>
+                        <a href="{{ site.baseurl }}/principles" class="btn">Ver Principios</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12 mb-4">
+                    <div class="action-card">
+                        <div class="action-card-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h3>Nuestro Liderazgo</h3>
+                        <p>Conoce a los ministros y pastores que sirven a nuestra comunidad de fe.</p>
+                        <a href="{{ site.baseurl }}/ministry" class="btn">Ver Ministerio</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12 mb-4">
+                    <div class="action-card">
+                        <div class="action-card-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <h3>Visítanos</h3>
+                        <p>Encuentra nuestras iglesias, horarios de culto y cómo llegar.</p>
+                        <a href="{{ site.baseurl }}/contact.html" class="btn">Cómo Llegar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Action Cards Section -->
+
+    <!-- Begin CTA Section -->
+    <section class="cta-section">
+        <div class="container text-center">
+            <h3>¿Tienes preguntas?</h3>
+            <p>Estamos aquí para ayudarte en tu camino espiritual.</p>
+            <a href="{{ site.baseurl }}/contact.html" class="btn">Contáctanos</a>
+        </div>
+    </section>
+    <!-- End CTA Section -->
 
 {% include footer.html %}
 {% include script.html %}
