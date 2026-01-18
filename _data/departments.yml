@@ -1,0 +1,169 @@
+- id: jovenes
+  title: Jóvenes
+  slug: jovenes
+  icon: fa-solid fa-users
+  image: jovenes_union.jpg
+  summary: Ministerio dedicado al crecimiento espiritual y desarrollo de los jóvenes.
+  mission: Guiar a los jóvenes en su camino espiritual, fortaleciendo su fe y preparándolos para servir a Dios y a la comunidad.
+  leader:
+    name: Jary Reyes
+    photo: placeholder.jpg
+  activities:
+    - Culto de jóvenes semanal
+    - Campamentos y retiros espirituales
+    - Estudios bíblicos interactivos
+    - Actividades recreativas con propósito
+  schedule: Sábados 4:00 PM
+
+- id: familia
+  title: Familia
+  slug: familia
+  icon: fa-solid fa-home
+  image: familia_union.jpg
+  summary: Fortaleciendo los hogares cristianos a través de consejería y actividades familiares.
+  mission: Edificar familias sólidas basadas en los principios bíblicos, promoviendo la unidad y el amor en el hogar.
+  leader:
+    name: Ada Batres
+    photo: placeholder.jpg
+  activities:
+    - Seminarios para matrimonios
+    - Retiros familiares
+    - Consejería familiar
+    - Celebraciones especiales (Día de la Madre, Padre, Familia)
+  schedule: Según programación
+
+- id: ninos
+  title: Niños
+  slug: ninos
+  icon: fa-solid fa-children
+  image: ninhos_union.jpg
+  summary: Enseñando a los más pequeños los valores cristianos de manera creativa y divertida.
+  mission: Sembrar la semilla del evangelio en los corazones de los niños a través de métodos creativos y apropiados para su edad.
+  leader:
+    name: Vanessa Sorto
+    photo: placeholder.jpg
+  activities:
+    - Escuela Sabática infantil
+    - Historias bíblicas ilustradas
+    - Manualidades y canciones
+    - Programas especiales para niños
+  schedule: Sábados 9:00 AM
+
+- id: musica
+  title: Música
+  slug: musica
+  icon: fa-solid fa-music
+  image: musica_union.jpg
+  summary: Alabando a Dios a través de himnos y cánticos espirituales en nuestros cultos.
+  mission: Dirigir a la congregación en la adoración a Dios a través de la música, cultivando talentos musicales para Su gloria.
+  leader:
+    name: Axel Avelar
+    photo: placeholder.jpg
+  activities:
+    - Dirección de himnos congregacionales
+    - Coro de la iglesia
+    - Grupos musicales especiales
+    - Capacitación musical
+  schedule: Ensayos según programación
+
+- id: salud
+  title: Salud
+  slug: salud
+  icon: fa-solid fa-heart-pulse
+  image: salud_union.jpg
+  summary: Promoviendo un estilo de vida saludable basado en los principios bíblicos.
+  mission: Educar y motivar a la comunidad hacia un estilo de vida saludable siguiendo los 8 remedios naturales.
+  leader:
+    name: Wilmer Padilla
+    photo: placeholder.jpg
+  activities:
+    - Charlas de salud
+    - Ferias de salud comunitarias
+    - Clases de cocina saludable
+    - Programas de estilo de vida
+  schedule: Según programación
+
+- id: multimedia
+  title: Multimedia
+  slug: multimedia
+  icon: fa-solid fa-video
+  image: multimedia_union.jpg
+  summary: Llevando el mensaje a través de medios digitales, redes sociales y transmisiones en vivo.
+  mission: Utilizar la tecnología y los medios de comunicación para difundir el mensaje del evangelio a nivel local y global.
+  leader:
+    name: Daniel Hernandez
+    photo: placeholder.jpg
+  activities:
+    - Transmisiones en vivo de cultos
+    - Producción de contenido para redes sociales
+    - Manejo de equipo audiovisual
+    - Diseño gráfico y edición de video
+  schedule: Durante todos los programas
+
+- id: colportaje
+  title: Colportaje
+  slug: colportaje
+  icon: fa-solid fa-book-bible
+  image: colportaje_union.jpg
+  summary: Distribuyendo literatura cristiana y llevando la verdad de puerta en puerta.
+  mission: Llevar la esperanza del evangelio a cada hogar a través de la distribución de literatura cristiana.
+  leader:
+    name: Abraham Gomez
+    photo: placeholder.jpg
+  activities:
+    - Distribución de libros y revistas
+    - Visitas puerta a puerta
+    - Campañas de evangelismo literario
+    - Capacitación de colportores
+  schedule: Domingos y días entre semana
+
+- id: asistencia_social
+  title: Asistencia Social
+  slug: asistencia-social
+  icon: fa-solid fa-hand-holding-heart
+  image: asistencia_social_union.jpg
+  summary: Ayudando a los necesitados y sirviendo a nuestra comunidad con amor cristiano.
+  mission: Demostrar el amor de Cristo a través del servicio práctico a los más necesitados de nuestra comunidad.
+  leader:
+    name: Wilmer Padilla
+    photo: placeholder.jpg
+  activities:
+    - Distribución de alimentos
+    - Ayuda a familias necesitadas
+    - Visitas a hospitales y asilos
+    - Campañas de donación de ropa
+  schedule: Según necesidades
+
+- id: escuela_sabatica
+  title: Escuela Sabática
+  slug: escuela-sabatica
+  icon: fa-solid fa-graduation-cap
+  image: evengeilismo_escuela_sabatica_union.jpg
+  summary: Estudiando la Palabra de Dios sistemáticamente cada sábado en grupos de estudio.
+  mission: Profundizar en el conocimiento de las Escrituras y fortalecer la fe de cada miembro a través del estudio sistemático de la Biblia.
+  leader:
+    name: Alexander Batres
+    photo: placeholder.jpg
+  activities:
+    - Estudio de la lección semanal
+    - Grupos de discusión bíblica
+    - Programas misioneros
+    - Capacitación de maestros
+  schedule: Sábados 9:00 AM - 10:30 AM
+
+- id: evangelismo
+  title: Evangelismo
+  slug: evangelismo
+  icon: fa-solid fa-bullhorn
+  image: evengeilismo_escuela_sabatica_union.jpg
+  summary: Compartiendo el mensaje del evangelio y alcanzando nuevas almas para Cristo.
+  mission: Llevar el mensaje de salvación a toda persona, cumpliendo la gran comisión de predicar el evangelio a toda criatura.
+  leader:
+    name: Alexander Batres
+    photo: placeholder.jpg
+  activities:
+    - Campañas evangelísticas
+    - Estudios bíblicos con interesados
+    - Visitación y seguimiento
+    - Preparación de bautismos
+  schedule: Según programación

@@ -1,91 +1,26 @@
 ---
 layout: default_style
 title: Departamentos
-permalink: /departments
+permalink: /departments/
 description: Conoce los departamentos que sirven a nuestra comunidad de fe.
 ---
 
 <div class="volunteering-intro">
-  <p>Nuestra iglesia está organizada en diferentes departamentos, cada uno con una misión específica para servir a Dios y a nuestra comunidad.</p>
+  <p>Nuestra iglesia está organizada en diferentes departamentos, cada uno con una misión específica para servir a Dios y a nuestra comunidad. Haz clic en cualquier departamento para conocer más sobre sus actividades y cómo participar.</p>
 </div>
 
 <div class="departments-grid">
-  <div class="department-card">
-    <img src="{{ site.baseurl }}/assets/img/departments/jovenes_union.jpg" alt="Departamento de Jóvenes" loading="lazy">
-    <div class="department-card-body">
-      <h4>Jóvenes</h4>
-      <p>Ministerio dedicado al crecimiento espiritual y desarrollo de los jóvenes de nuestra iglesia.</p>
+  {% for dept in site.data.departments %}
+  <a href="{{ site.baseurl }}/departments/{{ dept.slug }}/" class="department-card-link">
+    <div class="department-card">
+      <div class="department-card-icon">
+        <i class="{{ dept.icon }}"></i>
+      </div>
+      <div class="department-card-body">
+        <h4>{{ dept.title }}</h4>
+        <p>{{ dept.summary }}</p>
+      </div>
     </div>
-  </div>
-
-  <div class="department-card">
-    <img src="{{ site.baseurl }}/assets/img/departments/familia_union.jpg" alt="Departamento de Familia" loading="lazy">
-    <div class="department-card-body">
-      <h4>Familia</h4>
-      <p>Fortaleciendo los hogares cristianos a través de consejería y actividades familiares.</p>
-    </div>
-  </div>
-
-  <div class="department-card">
-    <img src="{{ site.baseurl }}/assets/img/departments/ninhos_union.jpg" alt="Departamento de Niños" loading="lazy">
-    <div class="department-card-body">
-      <h4>Niños</h4>
-      <p>Enseñando a los más pequeños los valores cristianos de manera creativa y divertida.</p>
-    </div>
-  </div>
-
-  <div class="department-card">
-    <img src="{{ site.baseurl }}/assets/img/departments/musica_union.jpg" alt="Departamento de Música" loading="lazy">
-    <div class="department-card-body">
-      <h4>Música</h4>
-      <p>Alabando a Dios a través de himnos y cánticos espirituales en nuestros cultos.</p>
-    </div>
-  </div>
-
-  <div class="department-card">
-    <img src="{{ site.baseurl }}/assets/img/departments/salud_union.jpg" alt="Departamento de Salud" loading="lazy">
-    <div class="department-card-body">
-      <h4>Salud</h4>
-      <p>Promoviendo un estilo de vida saludable basado en los principios bíblicos.</p>
-    </div>
-  </div>
-
-  <div class="department-card">
-    <img src="{{ site.baseurl }}/assets/img/departments/multimedia_union.jpg" alt="Departamento de Multimedia" loading="lazy">
-    <div class="department-card-body">
-      <h4>Multimedia</h4>
-      <p>Llevando el mensaje a través de medios digitales, redes sociales y transmisiones en vivo.</p>
-    </div>
-  </div>
-
-  <div class="department-card">
-    <img src="{{ site.baseurl }}/assets/img/departments/colportaje_union.jpg" alt="Departamento de Colportaje" loading="lazy">
-    <div class="department-card-body">
-      <h4>Colportaje</h4>
-      <p>Distribuyendo literatura cristiana y llevando la verdad de puerta en puerta.</p>
-    </div>
-  </div>
-
-  <div class="department-card">
-    <img src="{{ site.baseurl }}/assets/img/departments/asistencia_social_union.jpg" alt="Departamento de Asistencia Social" loading="lazy">
-    <div class="department-card-body">
-      <h4>Asistencia Social</h4>
-      <p>Ayudando a los necesitados y sirviendo a nuestra comunidad con amor cristiano.</p>
-    </div>
-  </div>
-
-  <div class="department-card">
-    <img src="{{ site.baseurl }}/assets/img/departments/evengeilismo_escuela_sabatica_union.jpg" alt="Escuela Sabática" loading="lazy">
-    <div class="department-card-body">
-      <h4>Escuela Sabática</h4>
-      <p>Estudiando la Palabra de Dios sistemáticamente cada sábado en grupos de estudio.</p>
-    </div>
-  </div>
-</div>
-
-<div class="gallery-cta">
-  <p>Si deseas participar en alguno de nuestros departamentos, contáctanos.</p>
-  <a href="https://wa.me/5048777922?text=Hola%2C%20me%20gustaría%20participar%20en%20un%20departamento%20de%20la%20iglesia." target="_blank" class="btn btn-volunteer">
-    <i class="fa-brands fa-whatsapp"></i> Contactar por WhatsApp
   </a>
+  {% endfor %}
 </div>

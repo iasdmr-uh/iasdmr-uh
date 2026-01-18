@@ -2486,6 +2486,19 @@ html {
   object-position: top;
 }
 
+.department-card-icon {
+  background: linear-gradient(135deg, #0A245E 0%, #0F3999 100%);
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.department-card-icon i {
+  font-size: 4rem;
+  color: #D4AF37;
+}
+
 .department-card-body {
   padding: 20px;
 }
@@ -2795,4 +2808,529 @@ html {
 .btn-schedule:hover {
   background: #e5b23c;
   color: #0A245E;
+}
+
+/* ==========================================================================
+   Individual Department Page Styles
+   ========================================================================== */
+
+/* Department Hero */
+.department-hero {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.department-hero-gradient {
+  background: linear-gradient(135deg, #0A245E 0%, #0F3999 50%, #3E80F2 100%);
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.department-hero-icon {
+  margin-bottom: 20px;
+}
+
+.department-hero-icon i {
+  font-size: 4rem;
+  color: #D4AF37;
+}
+
+.department-hero-accent {
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #D4AF37;
+  margin: 0 auto 20px;
+  border-radius: 2px;
+}
+
+.department-hero-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.department-hero-title i {
+  margin-right: 15px;
+  color: #D4AF37;
+}
+
+.department-hero-subtitle {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+  .department-hero-image,
+  .department-hero-overlay {
+    min-height: 280px;
+  }
+
+  .department-hero-title {
+    font-size: 1.8rem;
+  }
+
+  .department-hero-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Department Content */
+.department-content {
+  padding-bottom: 60px;
+}
+
+/* Department Sidebar */
+.department-sidebar {
+  background: #0A245E;
+  border-radius: 12px;
+  padding: 25px;
+  position: sticky;
+  top: 20px;
+  margin-bottom: 30px;
+}
+
+.department-sidebar h4 {
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.department-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.department-nav li {
+  margin-bottom: 5px;
+}
+
+.department-nav li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.department-nav li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+}
+
+.department-nav li.active a {
+  background: #D4AF37;
+  color: #0A245E;
+  font-weight: 600;
+}
+
+.department-nav li a i {
+  width: 20px;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 991px) {
+  .department-sidebar {
+    position: static;
+    margin-bottom: 30px;
+  }
+}
+
+.department-section {
+  margin-bottom: 50px;
+}
+
+.department-section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0A245E;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #D4AF37;
+}
+
+.department-section-title i {
+  color: #D4AF37;
+  margin-right: 12px;
+}
+
+.department-mission {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  max-width: 800px;
+}
+
+.department-description {
+  margin-top: 25px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Leader Card with Icon */
+.leader-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leader-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.leader-icon {
+  background: linear-gradient(135deg, #0A245E 0%, #0F3999 100%);
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leader-icon i {
+  font-size: 4rem;
+  color: #D4AF37;
+}
+
+.leader-photo {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.leader-info {
+  padding: 20px;
+  border-top: 3px solid #D4AF37;
+}
+
+.leader-name {
+  color: #0A245E;
+  font-family: 'BW Modelica', 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.leader-role {
+  color: #7E7E82;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Activities Grid */
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.activity-card {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-left: 4px solid #D4AF37;
+}
+
+.activity-card i {
+  color: #D4AF37;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.activity-card span {
+  color: #333;
+  font-size: 1rem;
+}
+
+@media (max-width: 767px) {
+  .activities-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Schedule Info Card */
+.schedule-info-card {
+  background: linear-gradient(135deg, #0A245E 0%, #0F3999 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.schedule-info-card i {
+  font-size: 2rem;
+  color: #D4AF37;
+}
+
+.schedule-info-card span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Gallery Placeholder */
+.department-gallery-placeholder,
+.testimonials-placeholder {
+  background: #F2F1EF;
+  border-radius: 12px;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.department-gallery-placeholder i,
+.testimonials-placeholder i {
+  font-size: 3rem;
+  color: #BDBDBD;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.department-gallery-placeholder p,
+.testimonials-placeholder p {
+  color: #7E7E82;
+  margin: 0;
+}
+
+/* Department CTA */
+.department-cta {
+  background: linear-gradient(135deg, #0A245E 0%, #0F3999 100%);
+  border-radius: 12px;
+  padding: 50px;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.department-cta h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.department-cta p {
+  opacity: 0.9;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+.department-cta .btn-volunteer {
+  background: #D4AF37;
+  color: #0A245E;
+  padding: 14px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s ease;
+}
+
+.department-cta .btn-volunteer:hover {
+  background: #FFFFFF;
+  color: #0A245E;
+}
+
+/* Back Button */
+.department-back {
+  text-align: center;
+}
+
+.btn-back {
+  color: #0A245E;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.btn-back:hover {
+  background: #F2F1EF;
+  color: #0A245E;
+}
+
+.btn-back i {
+  transition: transform 0.3s ease;
+}
+
+.btn-back:hover i {
+  transform: translateX(-4px);
+}
+
+/* Clickable Department Cards (Overview Page) */
+.department-card-link {
+  text-decoration: none;
+  display: block;
+}
+
+.department-card-link:hover {
+  text-decoration: none;
+}
+
+.department-card-link .department-card {
+  cursor: pointer;
+}
+
+.department-card-link:hover .department-card {
+  border-color: #D4AF37;
+}
+
+.department-card-link:hover .department-card h4 {
+  color: #D4AF37;
+}
+
+/* ==========================================================================
+   Volunteering Page - Participation Steps
+   ========================================================================== */
+
+.participation-steps {
+  margin-bottom: 50px;
+}
+
+.step-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.step-number {
+  background: linear-gradient(135deg, #0A245E 0%, #0F3999 100%);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.step-content h4 {
+  color: #0A245E;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+}
+
+.step-content h4 i {
+  color: #D4AF37;
+  margin-right: 10px;
+}
+
+.step-content p {
+  color: #7E7E82;
+  margin: 0;
+}
+
+/* Departments CTA Section */
+.departments-cta-section {
+  background: #F2F1EF;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+  border-left: 4px solid #D4AF37;
+}
+
+.departments-cta-section h3 {
+  color: #0A245E;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 15px;
+}
+
+.departments-cta-section h3 i {
+  color: #D4AF37;
+  margin-right: 10px;
+}
+
+.departments-cta-section p {
+  color: #7E7E82;
+  max-width: 600px;
+  margin: 0 auto 25px;
+}
+
+.btn-departments {
+  background: #0A245E;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s ease;
+}
+
+.btn-departments:hover {
+  background: #D4AF37;
+  color: #0A245E;
+}
+
+/* Other Opportunities Section */
+.other-opportunities {
+  margin-bottom: 25px;
+}
+
+.other-opportunities h3 {
+  color: #0A245E;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #D4AF37;
+  margin-bottom: 15px;
+}
+
+.other-opportunities p {
+  color: #7E7E82;
+}
+
+@media (max-width: 767px) {
+  .step-card {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .departments-cta-section {
+    padding: 30px 20px;
+  }
 }
