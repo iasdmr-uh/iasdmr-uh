@@ -10,8 +10,26 @@
         <li class="nav-item">
           <a class="nav-link" href="{{ site.baseurl }}/">Inicio</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ site.baseurl }}/about.html">Acerca de</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Nosotros
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/about.html">Quienes Somos</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/principles">Principios de Fe</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/ministry">Ministerio</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/departments">Departamentos</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Participa
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/volunteering">Voluntariado</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/donations">Donaciones</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/gallery">Galeria</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ site.baseurl }}/resources">Recursos</a>

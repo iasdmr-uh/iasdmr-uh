@@ -81,10 +81,23 @@ published: true
         <h4 class="contact-card-title">Envíanos un mensaje</h4>
 
         <div id="contact-response"></div>
+        <script>
+          if (window.location.search.includes('sent=true')) {
+            document.getElementById('contact-response').innerHTML =
+              '<div class="alert alert-success" role="alert">' +
+              '<strong>¡Mensaje enviado!</strong> Gracias por contactarnos. Te responderemos pronto.' +
+              '</div>';
+          }
+        </script>
 
-        <!-- Formspree contact form - replace YOUR_FORM_ID with your Formspree form ID -->
-        <!-- Create a free form at https://formspree.io/ (50 submissions/month free) -->
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contact-form">
+        <!-- Formsubmit.co contact form - free, no signup required -->
+        <form action="https://formsubmit.co/asdmruh@gmail.com" method="POST" id="contact-form">
+          <!-- Formsubmit.co configuration -->
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde el sitio web">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="{{ site.url }}{{ site.baseurl }}/contact?sent=true">
+
           <div class="form-group">
             <label class="control-label" for="fullname">Nombre *</label>
             <input type="text" class="form-control" name="name" id="fullname" placeholder="Introduce tu nombre" required>
@@ -98,7 +111,7 @@ published: true
             <textarea class="form-control" name="message" id="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
           </div>
           <!-- Honeypot field to prevent spam -->
-          <input type="text" name="_gotcha" style="display:none">
+          <input type="text" name="_honey" style="display:none">
           <button type="submit" class="btn btn-contact-submit">Enviar mensaje</button>
         </form>
       </div>

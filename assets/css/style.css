@@ -2077,3 +2077,712 @@ html {
     width: 100%;
   }
 }
+
+/*
+* ==========================================================================
+* About Page
+* ==========================================================================
+*/
+
+/* About section styling (similar to staff-section) */
+.about-section {
+  margin-bottom: 50px;
+}
+
+.about-section-header {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #0A245E;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #F1BE48;
+}
+
+.about-subsection-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0A245E;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+/* Mission list styling */
+.mission-list {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+}
+
+.mission-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 18px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.mission-list li i {
+  color: #F1BE48;
+  font-size: 1.2rem;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.mission-list li span {
+  color: #333;
+}
+
+/* Values grid styling */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.value-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 35px 25px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #F1BE48;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.value-icon {
+  color: #0A245E;
+  margin-bottom: 20px;
+}
+
+.value-card h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #0A245E;
+  margin-bottom: 15px;
+}
+
+.value-card p {
+  color: #7E7E82;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .value-card {
+    padding: 25px 20px;
+  }
+}
+
+/* Organizational structure diagram */
+.org-structure {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.org-level {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.org-box {
+  background: #FFFFFF;
+  border: 2px solid #E5E5E5;
+  border-radius: 10px;
+  padding: 20px 30px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.org-box:hover {
+  border-color: #F1BE48;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.org-box i {
+  color: #0A245E;
+  font-size: 1.5rem;
+}
+
+.org-box span {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #0A245E;
+  font-size: 1rem;
+}
+
+.org-box small {
+  color: #7E7E82;
+  font-size: 0.85rem;
+}
+
+.org-box-highlight {
+  background: linear-gradient(135deg, #0A245E 0%, #0F3999 100%);
+  border-color: #0A245E;
+}
+
+.org-box-highlight i,
+.org-box-highlight span {
+  color: #FFFFFF;
+}
+
+.org-box-highlight small {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.org-box-small {
+  min-width: 180px;
+  padding: 15px 20px;
+}
+
+.org-box-small span {
+  font-size: 0.9rem;
+}
+
+.org-connector {
+  width: 3px;
+  height: 30px;
+  background: #F1BE48;
+  margin: 0 auto;
+}
+
+.org-connector-triple {
+  position: relative;
+  width: 60%;
+  max-width: 400px;
+  height: 30px;
+  background: transparent;
+}
+
+.org-connector-triple::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 15px;
+  background: #F1BE48;
+}
+
+.org-connector-triple::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #F1BE48;
+}
+
+@media (max-width: 767px) {
+  .org-level-3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .org-box {
+    min-width: 160px;
+    padding: 15px 20px;
+  }
+
+  .org-box-small {
+    min-width: 160px;
+  }
+
+  .org-connector-triple {
+    width: 3px;
+    height: 30px;
+  }
+
+  .org-connector-triple::before,
+  .org-connector-triple::after {
+    display: none;
+  }
+
+  .about-section-header {
+    font-size: 1.5rem;
+  }
+}
+/* ==========================================================================
+   Gallery Page Styles
+   ========================================================================== */
+
+.gallery-intro {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #7E7E82;
+  font-size: 1.1rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 4/3;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-section-title {
+  color: #0A245E;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  margin: 40px 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #F1BE48;
+}
+
+.gallery-cta {
+  text-align: center;
+  padding: 40px;
+  background: #F2F1EF;
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+.gallery-cta p {
+  color: #7E7E82;
+  margin-bottom: 20px;
+}
+
+.gallery-social {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn-social-fb {
+  background: #1877F2;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-social-fb:hover {
+  background: #0d65d9;
+  color: white;
+}
+
+.btn-social-yt {
+  background: #FF0000;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-social-yt:hover {
+  background: #cc0000;
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .gallery-social {
+    flex-direction: column;
+  }
+}
+
+/* ==========================================================================
+   Departments Page Styles
+   ========================================================================== */
+
+.departments-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.department-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.department-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.department-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.department-card-body {
+  padding: 20px;
+}
+
+.department-card h4 {
+  color: #0A245E;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.department-card p {
+  color: #7E7E82;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .departments-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .departments-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Volunteering Page Styles
+   ========================================================================== */
+
+.volunteering-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.volunteering-intro p {
+  color: #7E7E82;
+  font-size: 1.1rem;
+}
+
+.opportunities-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.opportunity-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #F1BE48;
+}
+
+.opportunity-card h4 {
+  color: #0A245E;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+}
+
+.opportunity-card p {
+  color: #7E7E82;
+  margin: 0;
+}
+
+.volunteering-cta {
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #0A245E 0%, #0F3999 100%);
+  border-radius: 12px;
+  color: white;
+}
+
+.volunteering-cta h3 {
+  margin-bottom: 15px;
+}
+
+.volunteering-cta p {
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.btn-volunteer {
+  background: #F1BE48;
+  color: #0A245E;
+  padding: 14px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.btn-volunteer:hover {
+  background: #e5b23c;
+  color: #0A245E;
+}
+
+@media (max-width: 767px) {
+  .opportunities-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Donations Page Styles
+   ========================================================================== */
+
+.donations-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.donations-intro p {
+  color: #7E7E82;
+  font-size: 1.1rem;
+}
+
+.giving-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.giving-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.giving-card-icon {
+  font-size: 2.5rem;
+  color: #F1BE48;
+  margin-bottom: 15px;
+}
+
+.giving-card h4 {
+  color: #0A245E;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+}
+
+.giving-card p {
+  color: #7E7E82;
+  font-size: 0.95rem;
+}
+
+.bank-info {
+  background: #F2F1EF;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.bank-info h4 {
+  color: #0A245E;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.bank-info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bank-info-item:last-child {
+  border-bottom: none;
+}
+
+.bank-info-label {
+  color: #7E7E82;
+  font-weight: 500;
+}
+
+.bank-info-value {
+  color: #0A245E;
+  font-weight: 600;
+}
+
+.donations-verse {
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #0A245E 0%, #0F3999 100%);
+  border-radius: 12px;
+  color: white;
+}
+
+.donations-verse blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.donations-verse cite {
+  opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+  .giving-options {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Service Times Section
+   ========================================================================== */
+
+.service-times-section {
+  padding: 60px 0;
+  background: #F2F1EF;
+}
+
+.service-times-section .section-title {
+  text-align: center;
+  color: #0A245E;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+}
+
+.service-times-section .section-title i {
+  color: #F1BE48;
+  margin-right: 10px;
+}
+
+.schedule-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+
+.schedule-card h3 {
+  color: #0A245E;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #F1BE48;
+}
+
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.schedule-item:last-child {
+  border-bottom: none;
+}
+
+.schedule-time {
+  color: #F1BE48;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.schedule-name {
+  color: #7E7E82;
+}
+
+.schedule-card-location {
+  background: linear-gradient(135deg, #0A245E 0%, #0F3999 100%);
+  color: white;
+}
+
+.schedule-card-location h3 {
+  color: white;
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+.schedule-card-location h3 i {
+  color: #F1BE48;
+}
+
+.schedule-card-location p {
+  opacity: 0.9;
+  line-height: 1.8;
+}
+
+.btn-schedule {
+  background: #F1BE48;
+  color: #0A245E;
+  padding: 10px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+}
+
+.btn-schedule:hover {
+  background: #e5b23c;
+  color: #0A245E;
+}
