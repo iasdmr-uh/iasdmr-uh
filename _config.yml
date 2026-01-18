@@ -14,6 +14,10 @@ company_email: asdmruh@gmail.com
 google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6461.3216771822235!2d-87.87977943336612!3d14.609686376530423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f65bf202adb95d1%3A0x8b3f64d6e4dbf372!2sEscuela%20misionera%20Eben-Eser!5e0!3m2!1ses-419!2shn!4v1720606045663!5m2!1ses-419!2shn
 facebook_link: https://www.facebook.com/profile.php?id=100064555941818
 youtube_link: https://www.youtube.com/@unionhondurenaasdmr8339
+whatsapp_number: "5048777922"
+
+## Theme Colors
+navbar_color: "#0A245E"
 
 # Build settings
 markdown: kramdown
@@ -22,6 +26,4 @@ plugins:
 
 collections:
   principles:
-    output: true
-  ministers:
     output: true
