@@ -668,7 +668,7 @@ p.blog-text {
 * ==========================================================================
 */
 .sabbath-hero-section {
-  background: linear-gradient(135deg, #0A245E 0%, #0F3999 100%);
+  background: linear-gradient(135deg, #0A245E 0%, #0F3999 50%, #3E80F2 100%);
   color: white;
   padding: 4rem 1rem;
   margin-bottom: 3rem;
@@ -741,7 +741,7 @@ p.blog-text {
 
 .services-group {
   padding: 30px 25px;
-  background: linear-gradient(135deg, #0A245E 0%, #0F3999 100%);
+  background: linear-gradient(135deg, #0A245E 0%, #0F3999 50%, #3E80F2 100%);
   color: #F2F1EF;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
