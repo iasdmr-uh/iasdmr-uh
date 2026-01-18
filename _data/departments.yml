@@ -1,106 +1,18 @@
-- id: jovenes
-  title: Jóvenes
-  slug: jovenes
-  icon: fa-solid fa-users
-  image: jovenes_union.jpg
-  summary: Ministerio dedicado al crecimiento espiritual y desarrollo de los jóvenes.
-  mission: Guiar a los jóvenes en su camino espiritual, fortaleciendo su fe y preparándolos para servir a Dios y a la comunidad.
-  facebook: https://www.facebook.com/JRMultimediaHonduras/
-  leader:
-    name: Jary Reyes
-    photo: placeholder.jpg
-  activities:
-    - Culto de jóvenes semanal
-    - Campamentos y retiros espirituales
-    - Estudios bíblicos interactivos
-    - Actividades recreativas con propósito
-  schedule: Sábados 4:00 PM
-
-- id: familia
-  title: Familia
-  slug: familia
-  icon: fa-solid fa-home
-  image: familia_union.jpg
-  summary: Fortaleciendo los hogares cristianos a través de consejería y actividades familiares.
-  mission: Edificar familias sólidas basadas en los principios bíblicos, promoviendo la unidad y el amor en el hogar.
-  leader:
-    name: Ada Batres
-    photo: placeholder.jpg
-  activities:
-    - Seminarios para matrimonios
-    - Retiros familiares
-    - Consejería familiar
-    - Celebraciones especiales (Día de la Madre, Padre, Familia)
-  schedule: Según programación
-
-- id: ninos
-  title: Niños
-  slug: ninos
-  icon: fa-solid fa-children
-  image: ninhos_union.jpg
-  summary: Enseñando a los más pequeños los valores cristianos de manera creativa y divertida.
-  mission: Sembrar la semilla del evangelio en los corazones de los niños a través de métodos creativos y apropiados para su edad.
-  leader:
-    name: Vanessa Sorto
-    photo: placeholder.jpg
-  activities:
-    - Escuela Sabática infantil
-    - Historias bíblicas ilustradas
-    - Manualidades y canciones
-    - Programas especiales para niños
-  schedule: Sábados 9:00 AM
-
-- id: musica
-  title: Música
-  slug: musica
-  icon: fa-solid fa-music
-  image: musica_union.jpg
-  summary: Alabando a Dios a través de himnos y cánticos espirituales en nuestros cultos.
-  mission: Dirigir a la congregación en la adoración a Dios a través de la música, cultivando talentos musicales para Su gloria.
-  facebook: https://www.facebook.com/profile.php?id=61566967660514
-  leader:
-    name: Axel Avelar
-    photo: placeholder.jpg
-  activities:
-    - Dirección de himnos congregacionales
-    - Coro de la iglesia
-    - Grupos musicales especiales
-    - Capacitación musical
-  schedule: Ensayos según programación
-
-- id: salud
-  title: Salud
-  slug: salud
-  icon: fa-solid fa-heart-pulse
-  image: salud_union.jpg
-  summary: Promoviendo un estilo de vida saludable basado en los principios bíblicos.
-  mission: Educar y motivar a la comunidad hacia un estilo de vida saludable siguiendo los 8 remedios naturales.
+- id: asistencia_social
+  title: Asistencia Social
+  slug: asistencia-social
+  icon: fa-solid fa-hand-holding-heart
+  image: asistencia_social_union.jpg
+  summary: Ayudando a los necesitados y sirviendo a nuestra comunidad con amor cristiano.
+  mission: Demostrar el amor de Cristo a través del servicio práctico a los más necesitados de nuestra comunidad.
   leader:
     name: Wilmer Padilla
     photo: placeholder.jpg
   activities:
-    - Charlas de salud
-    - Ferias de salud comunitarias
-    - Clases de cocina saludable
-    - Programas de estilo de vida
-  schedule: Según programación
-
-- id: multimedia
-  title: Multimedia
-  slug: multimedia
-  icon: fa-solid fa-video
-  image: multimedia_union.jpg
-  summary: Llevando el mensaje a través de medios digitales, redes sociales y transmisiones en vivo.
-  mission: Utilizar la tecnología y los medios de comunicación para difundir el mensaje del evangelio a nivel local y global.
-  leader:
-    name: Daniel Hernandez
-    photo: placeholder.jpg
-  activities:
-    - Transmisiones en vivo de cultos
-    - Producción de contenido para redes sociales
-    - Manejo de equipo audiovisual
-    - Diseño gráfico y edición de video
-  schedule: Durante todos los programas
+    - Misiones humanitarias y programas de impacto social
+    - Apoyo a la salud
+    - Apoyo en emergencias
+  schedule: Según necesidades
 
 - id: colportaje
   title: Colportaje
@@ -119,23 +31,6 @@
     - Capacitación de colportores
   schedule: Domingos y días entre semana
 
-- id: asistencia_social
-  title: Asistencia Social
-  slug: asistencia-social
-  icon: fa-solid fa-hand-holding-heart
-  image: asistencia_social_union.jpg
-  summary: Ayudando a los necesitados y sirviendo a nuestra comunidad con amor cristiano.
-  mission: Demostrar el amor de Cristo a través del servicio práctico a los más necesitados de nuestra comunidad.
-  leader:
-    name: Wilmer Padilla
-    photo: placeholder.jpg
-  activities:
-    - Distribución de alimentos
-    - Ayuda a familias necesitadas
-    - Visitas a hospitales y asilos
-    - Campañas de donación de ropa
-  schedule: Según necesidades
-
 - id: escuela_sabatica
   title: Escuela Sabática
   slug: escuela-sabatica
@@ -152,6 +47,40 @@
     - Programas misioneros
     - Capacitación de maestros
   schedule: Sábados 9:00 AM - 10:30 AM
+
+- id: evangelismo
+  title: Evangelismo
+  slug: evangelismo
+  icon: fa-solid fa-bullhorn
+  image: evengeilismo_escuela_sabatica_union.jpg
+  summary: Compartiendo el mensaje del evangelio y alcanzando nuevas almas para Cristo.
+  mission: Llevar el mensaje de salvación a toda persona, cumpliendo la gran comisión de predicar el evangelio a toda criatura.
+  leader:
+    name: Alexander Batres
+    photo: placeholder.jpg
+  activities:
+    - Campañas evangelísticas
+    - Estudios bíblicos con interesados
+    - Visitación y seguimiento
+    - Preparación de bautismos
+  schedule: Según programación
+
+- id: familia
+  title: Familia
+  slug: familia
+  icon: fa-solid fa-home
+  image: familia_union.jpg
+  summary: Fortaleciendo los hogares cristianos a través de consejería y actividades familiares.
+  mission: Edificar familias sólidas basadas en los principios bíblicos, promoviendo la unidad y el amor en el hogar.
+  leader:
+    name: Ada Batres
+    photo: placeholder.jpg
+  activities:
+    - Seminarios para matrimonios
+    - Retiros familiares
+    - Consejería familiar
+    - Celebraciones especiales (Día de la Madre, Padre, Familia)
+  schedule: Según programación
 
 - id: industria
   title: Industria y Comercio
@@ -171,19 +100,89 @@
     - Talleres de desarrollo económico
   schedule: Según programación
 
-- id: evangelismo
-  title: Evangelismo
-  slug: evangelismo
-  icon: fa-solid fa-bullhorn
-  image: evengeilismo_escuela_sabatica_union.jpg
-  summary: Compartiendo el mensaje del evangelio y alcanzando nuevas almas para Cristo.
-  mission: Llevar el mensaje de salvación a toda persona, cumpliendo la gran comisión de predicar el evangelio a toda criatura.
+- id: jovenes
+  title: Jóvenes
+  slug: jovenes
+  icon: fa-solid fa-users
+  image: jovenes_union.jpg
+  summary: Ministerio dedicado al crecimiento espiritual y desarrollo de los jóvenes.
+  mission: Fomentar la integración espiritual, educativa, social y misionera de los jóvenes a través de programas prácticos e intensivos, que fortalezca su identidad cristiana y los equipe para ser testigos activos del evangelio.
+  facebook: https://www.facebook.com/JRMultimediaHonduras/
   leader:
-    name: Alexander Batres
+    name: Jary Reyes
     photo: placeholder.jpg
   activities:
-    - Campañas evangelísticas
-    - Estudios bíblicos con interesados
-    - Visitación y seguimiento
-    - Preparación de bautismos
+    - Culto de jóvenes semanal
+    - Campamentos y retiros espirituales
+    - Estudios bíblicos interactivos
+    - Actividades recreativas con propósito
+  schedule: Sábados 4:00 PM
+
+- id: multimedia
+  title: Multimedia
+  slug: multimedia
+  icon: fa-solid fa-video
+  image: multimedia_union.jpg
+  summary: Llevando el mensaje a través de medios digitales, redes sociales y transmisiones en vivo.
+  mission: Utilizar la tecnología y los medios de comunicación para difundir el mensaje del evangelio a nivel local y global.
+  leader:
+    name: Daniel Hernandez
+    photo: placeholder.jpg
+  activities:
+    - Transmisiones en vivo de cultos
+    - Producción de contenido para redes sociales
+    - Manejo de equipo audiovisual
+    - Diseño gráfico y edición de video
+  schedule: Durante todos los programas
+
+- id: musica
+  title: Música
+  slug: musica
+  icon: fa-solid fa-music
+  image: musica_union.jpg
+  summary: Alabando a Dios a través de voces e instrumentos en nuestros cultos.
+  mission: Dirigir a la congregación en la adoración a Dios, desarrollando el talento musical vocal e instrumental para Su gloria.
+  facebook: https://www.facebook.com/profile.php?id=61566967660514
+  leader:
+    name: Axel Avelar
+    photo: placeholder.jpg
+  activities:
+    - Dirección de himnos congregacionales
+    - Coro de la iglesia
+    - Grupos musicales especiales
+    - Capacitación musical
+  schedule: Ensayos según programación
+
+- id: ninos
+  title: Niños
+  slug: ninos
+  icon: fa-solid fa-children
+  image: ninhos_union.jpg
+  summary: Enseñando a los más pequeños los valores cristianos de manera creativa y divertida.
+  mission: Sembrar la semilla del evangelio en los corazones de los niños a través de métodos creativos y apropiados para su edad.
+  leader:
+    name: Vanessa Sorto
+    photo: placeholder.jpg
+  activities:
+    - Escuela Sabática infantil
+    - Historias bíblicas ilustradas
+    - Manualidades y canciones
+    - Programas especiales para niños
+  schedule: Sábados 9:00 AM
+
+- id: salud
+  title: Salud
+  slug: salud
+  icon: fa-solid fa-heart-pulse
+  image: salud_union.jpg
+  summary: Promoviendo un estilo de vida saludable basado en los principios bíblicos.
+  mission: Educar y motivar a la comunidad hacia un estilo de vida saludable siguiendo los 8 remedios naturales.
+  leader:
+    name: Wilmer Padilla
+    photo: placeholder.jpg
+  activities:
+    - Charlas de salud
+    - Ferias de salud comunitarias
+    - Clases de cocina saludable
+    - Programas de estilo de vida
   schedule: Según programación
