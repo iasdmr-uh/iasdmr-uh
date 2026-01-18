@@ -117,6 +117,59 @@
     </section>
     <!-- End Action Cards Section -->
 
+    <!-- Begin Events Section -->
+    <section class="events-section">
+        <div class="container">
+            <div class="events-header">
+                <h2><i class="fa-solid fa-calendar-days"></i> Próximos Eventos</h2>
+                <a href="{{ site.facebook_link }}/events" class="events-view-all" target="_blank" rel="noopener">
+                    Ver todos <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Events will be loaded dynamically from Facebook Graph API -->
+            <!-- For now, using static placeholder content -->
+            <div class="events-grid" id="facebook-events">
+                <article class="event-card">
+                    <div class="event-date">
+                        <span class="event-month">ENE</span>
+                        <span class="event-day">25</span>
+                    </div>
+                    <div class="event-details">
+                        <h3 class="event-title">Culto de Sábado</h3>
+                        <p class="event-time"><i class="fa-regular fa-clock"></i> 9:00 AM - 12:00 PM</p>
+                        <p class="event-location"><i class="fa-solid fa-location-dot"></i> Iglesia Buenos Aires</p>
+                    </div>
+                </article>
+
+                <article class="event-card">
+                    <div class="event-date">
+                        <span class="event-month">FEB</span>
+                        <span class="event-day">8</span>
+                    </div>
+                    <div class="event-details">
+                        <h3 class="event-title">Semana de Oración</h3>
+                        <p class="event-time"><i class="fa-regular fa-clock"></i> 6:00 PM - 8:00 PM</p>
+                        <p class="event-location"><i class="fa-solid fa-location-dot"></i> Iglesia Central</p>
+                    </div>
+                </article>
+
+                <article class="event-card">
+                    <div class="event-date">
+                        <span class="event-month">FEB</span>
+                        <span class="event-day">15</span>
+                    </div>
+                    <div class="event-details">
+                        <h3 class="event-title">Retiro de Jóvenes</h3>
+                        <p class="event-time"><i class="fa-regular fa-clock"></i> Todo el día</p>
+                        <p class="event-location"><i class="fa-solid fa-location-dot"></i> Campamento Adventista</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- End Events Section -->
+
     <!-- Begin CTA Section -->
     <section class="cta-section">
         <div class="container text-center">

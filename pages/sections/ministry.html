@@ -13,7 +13,7 @@ sidebar_content: |
         <a href="#pastores">Pastores (7)</a>
       </li>
       <li class="list-group-item">
-        <a href="#obreros">Obreros (13)</a>
+        <a href="#misioneros">Misioneros Bíblicos (13)</a>
       </li>
     </ul>
 ---
@@ -39,8 +39,9 @@ sidebar_content: |
           </svg>
         </div>
         {% endif %}
-        <h5 class="staff-name">{{ minister.name }}</h5>
-        <p class="staff-role">{{ minister.state }}</p>
+        <div class="staff-info">
+          <h5 class="staff-name">{{ minister.name }}</h5>
+        </div>
       </div>
     </div>
     {% endfor %}
@@ -68,17 +69,18 @@ sidebar_content: |
           </svg>
         </div>
         {% endif %}
-        <h5 class="staff-name">{{ pastor.name }}</h5>
-        <p class="staff-role">{{ pastor.state }}</p>
+        <div class="staff-info">
+          <h5 class="staff-name">{{ pastor.name }}</h5>
+        </div>
       </div>
     </div>
     {% endfor %}
   </div>
 </section>
 
-<!-- Obreros Section -->
-<section id="obreros" class="staff-section">
-  <h2 class="staff-section-header">Obreros</h2>
+<!-- Misioneros Bíblicos Section -->
+<section id="misioneros" class="staff-section">
+  <h2 class="staff-section-header">Misioneros Bíblicos</h2>
   <div class="staff-grid row">
     {% for worker in site.data.ministers.workers %}
     <div class="col-lg-4 col-md-6 col-12">
@@ -97,8 +99,9 @@ sidebar_content: |
           </svg>
         </div>
         {% endif %}
-        <h5 class="staff-name">{{ worker.name }}</h5>
-        <p class="staff-role">{{ worker.state }}</p>
+        <div class="staff-info">
+          <h5 class="staff-name">{{ worker.name }}</h5>
+        </div>
       </div>
     </div>
     {% endfor %}
