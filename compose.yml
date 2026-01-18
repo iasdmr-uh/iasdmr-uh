@@ -2,7 +2,7 @@ services:
   jekyll:
     image: jekyll/jekyll:3.8
     container_name: union-website
-    command: jekyll serve --watch --force_polling
+    command: jekyll serve --config _config.yml,_config.dev.yml --watch --force_polling
     ports:
       - "4000:4000"
     volumes:
