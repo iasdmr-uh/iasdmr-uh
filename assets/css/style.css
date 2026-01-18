@@ -956,8 +956,58 @@ footer {
 * Optional Carousel
 * ==========================================================================
 */
+
+/* Carousel Indicators */
+.carousel-indicators {
+  bottom: 20px;
+}
+
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicators button.active {
+  background-color: #F1BE48;
+}
+
+/* Carousel Caption with gradient overlay */
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  pointer-events: none;
+}
+
+.carousel-caption {
+  z-index: 10;
+  bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 .carousel-caption .carousel-title {
   color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.carousel-caption .carousel-body {
+  color: #F1BE48;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
