@@ -860,6 +860,7 @@ p.blog-text {
   background: linear-gradient(135deg, #0A245E 0%, #0F3999 50%, #3E80F2 100%);
   color: white;
   padding: 60px 0;
+  margin-top: 20px;
   margin-bottom: 40px;
   text-align: center;
 }
