@@ -590,11 +590,13 @@ p.blog-text {
   background: #0A245E;
   color: #F2F1EF;
   border-radius: 8px;
-  transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .services-group:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(10, 36, 94, 0.25);
 }
 
 .service-icon {
@@ -1122,6 +1124,35 @@ Custom
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* Staff photo cards - ministry page */
+#ministros .card,
+#pastores .card,
+#workers .card {
+  overflow: hidden;
+}
+
+#ministros .card-img-top,
+#pastores .card-img-top,
+#workers .card-img-top {
+  height: 300px;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.4s ease;
+}
+
+#ministros .card:hover .card-img-top,
+#pastores .card:hover .card-img-top,
+#workers .card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+#ministros .card-body,
+#pastores .card-body,
+#workers .card-body {
+  border-top: 3px solid #F1BE48;
+}
+
 .btn-custom-pdf {
   background-color: #0A245E;
   color: white;
@@ -1158,4 +1189,33 @@ Custom
   background-color: #FFFFFF;
   color: #0A245E;
   transform: translateY(-1px);
+}
+
+/* Coming Soon placeholder for stub pages */
+.coming-soon-container {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #F2F1EF 0%, #FFFFFF 100%);
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.coming-soon-container i {
+  color: #F1BE48;
+  margin-bottom: 25px;
+}
+
+.coming-soon-container h2 {
+  color: #0A245E;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.coming-soon-container p {
+  color: #7E7E82;
+  font-size: 1.1rem;
+  max-width: 400px;
+  margin: 0 auto;
 }
