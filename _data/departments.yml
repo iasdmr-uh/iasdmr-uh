@@ -14,6 +14,23 @@
     - Apoyo en emergencias
   schedule: Según necesidades
 
+- id: agricultura
+  title: Agricultura
+  slug: agricultura
+  icon: fa-solid fa-seedling
+  image: agricultura_union.jpg
+  summary: Fomentando el trabajo agrícola sostenible y el cuidado de la creación.
+  mission: Promover prácticas agrícolas responsables que fortalezcan la autosuficiencia y el servicio a la comunidad.
+  leader:
+    name: Emmanuel Mejia
+    photo: placeholder.jpg
+  activities:
+    - Capacitación en agricultura sostenible
+    - Huertos comunitarios y familiares
+    - Ferias y talleres de cultivo
+    - Proyectos de servicio en el campo
+  schedule: Según programación
+
 - id: colportaje
   title: Colportaje
   slug: colportaje
