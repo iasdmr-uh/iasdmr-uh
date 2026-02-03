@@ -2001,6 +2001,146 @@ html {
 
 /*
 * ==========================================================================
+* Committee Page
+* ==========================================================================
+*/
+
+.committee-section {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.committee-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 10px 0 20px;
+}
+
+.committee-row {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(160px, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin-top: 10px;
+  width: 100%;
+  padding: 0 16px;
+  justify-content: center;
+}
+
+.committee-card {
+  background: #FFFFFF;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: clamp(160px, 12vw, 220px);
+  display: flex;
+  flex-direction: column;
+}
+
+.committee-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.committee-photo {
+  width: 100%;
+  height: clamp(140px, 14vw, 200px);
+  object-fit: cover;
+  object-position: top center;
+  background-color: #E8E8E8;
+  transition: transform 0.4s ease;
+}
+
+.committee-card:hover .committee-photo {
+  transform: scale(1.05);
+}
+
+.committee-placeholder {
+  width: 100%;
+  height: clamp(140px, 14vw, 200px);
+  background-color: #E8E8E8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.committee-placeholder svg {
+  width: 90px;
+  height: 90px;
+  fill: #BDBDBD;
+}
+
+.committee-info {
+  padding: 12px 14px;
+  border-top: 3px solid #D4AF37;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 68px;
+}
+
+.committee-name {
+  color: #0A245E;
+  font-family: 'BW Modelica', 'Poppins', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  text-wrap: balance;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.committee-role {
+  color: #7E7E82;
+  font-size: 0.9rem;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+@media (max-width: 991px) {
+  .committee-card {
+    width: clamp(160px, 22vw, 200px);
+  }
+}
+
+@media (max-width: 1023px) {
+  .committee-row {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 767px) {
+  .committee-row {
+    gap: 18px;
+  }
+
+  .committee-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .committee-photo,
+  .committee-placeholder {
+    height: 200px;
+  }
+}
+
+/*
+* ==========================================================================
 * Contact Page
 * ==========================================================================
 */

@@ -1,0 +1,45 @@
+---
+layout: default_style
+title: Comité ejecutivo
+permalink: /committee
+description: Conoce a los miembros del comité que apoyan la misión y la organización de nuestra comunidad.
+committee_members:
+  - name: Daniel Contreras
+    role: Presidente
+    photo: Daniel_Contreras.jpg
+    folder: pastors
+  - name: Jary Reyes
+    role: Vicepresidente
+    photo: Jary_Reyes.jpg
+    folder: ministers
+  - name: Isai Lainez
+    role: Secretario
+    photo: Isai_Lainez.jpg
+    folder: workers
+  - name: Amilcar Villalta
+    role: Tesorero
+    photo: Amilcar_Villalta.jpg
+    folder: workers
+  - name: Eduyn Alexy Hernández Aguilar
+    role: Vocal 1
+    photo: Alexy_Hernandez.jpg
+    folder: workers
+  - name: Alejandro Hernandez Paz
+    role: Vocal 2
+    photo: Alejandro_Hernandez.jpg
+    folder: workers
+  - name: Santos Guardado
+    role: Vocal 3
+    photo: Santos_Guardado.jpg
+    folder: pastors
+---
+
+<section class="committee-section">
+  <div class="committee-chart">
+    <div class="committee-row committee-row--flat">
+      {% for member in page.committee_members %}
+        {% include person-card.html person=member %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
