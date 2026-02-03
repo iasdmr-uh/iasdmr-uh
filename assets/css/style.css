@@ -707,6 +707,17 @@ p.blog-text {
   border-color: #D4AF37;
 }
 
+.event-card.is-disabled {
+  cursor: default;
+  opacity: 0.75;
+}
+
+.event-card.is-disabled:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
 .event-date {
   background: #0A245E;
   color: #FFFFFF;
@@ -759,6 +770,37 @@ p.blog-text {
   color: #D4AF37;
   width: 18px;
   margin-right: 8px;
+}
+
+.event-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0A245E;
+  text-decoration: none;
+  margin-top: 8px;
+  transition: color 0.3s ease;
+}
+
+.event-link:hover {
+  color: #D4AF37;
+}
+
+.event-link.is-disabled {
+  color: #7E7E82;
+  pointer-events: none;
+}
+
+.events-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #7E7E82;
+  padding: 20px;
+  border: 1px dashed #DAD6CF;
+  border-radius: 10px;
+  background: #FAF9F7;
 }
 
 @media (max-width: 991px) {
