@@ -1,6 +1,6 @@
 ---
 layout: default_style
-title: Principios de Fe
+title: Creencias fundamentales
 permalink: /principles
 description: |
     Explora los 25 fundamentos de nuestra creencia, basados en la Biblia y
@@ -34,9 +34,7 @@ description: |
         <div class="principles-grid">
             {% for principle in site.data.principles %}
             <a href="{{ site.baseurl }}{{ principle.link }}" class="principle-card">
-                <img src="{{ site.baseurl }}/assets/img/principles/principle_{{ principle.id }}.png"
-                     alt="{{ principle.title }}"
-                     loading="lazy">
+                <span class="principle-card-title">{{ principle.title }}</span>
             </a>
             {% endfor %}
         </div>
