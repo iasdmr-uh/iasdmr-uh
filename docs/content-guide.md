@@ -78,7 +78,7 @@ Contact details are in `_config.yml`:
 ```yaml
 company_name: Unión Hondureña
 address_line: J47F+658, Siguatepeque, Comayagua
-telephone_number: +504 8777-9224
+telephone_number: +504 9540-7686
 company_email: asdmruh@gmail.com
 ```
 
