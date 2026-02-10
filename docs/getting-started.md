@@ -69,7 +69,7 @@ union-website/
 Let's try something simple. Open `_config.yml` and find the `telephone_number` line:
 
 ```yaml
-telephone_number: +504 8777-9224
+telephone_number: +504 9540-7686
 ```
 
 Change it to anything, save the file, and refresh the browser. You'll see the footer update.

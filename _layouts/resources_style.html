@@ -36,8 +36,14 @@ layout: base
           {% endif %}
 
           {% if section.google_play_url %}
-          <a href="{{ section.google_play_url }}" class="btn btn-outline-light">
+          <a href="{{ section.google_play_url }}" class="btn btn-outline-light me-2">
             <i class="bi bi-google-play"></i> Google Play
+          </a>
+          {% endif %}
+
+          {% if section.huawei_appgallery_url %}
+          <a href="{{ section.huawei_appgallery_url }}" class="btn btn-outline-light me-2">
+            <i class="bi bi-phone"></i> Huawei
           </a>
           {% endif %}
 
