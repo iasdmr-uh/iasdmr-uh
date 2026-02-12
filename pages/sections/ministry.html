@@ -4,46 +4,17 @@ title: Ministerio
 permalink: /ministry
 description: Te invitamos a conocer a nuestros líderes espirituales, quienes guían y apoyan a nuestra comunidad con dedicación y amor.
 sidebar_title: Índice
-sidebar_content: |
-    <ul class="list-group">
-      <li class="list-group-item">
-        <a href="#ministros">Ministros (2)</a>
-      </li>
-      <li class="list-group-item">
-        <a href="#pastores">Pastores (7)</a>
-      </li>
-      <li class="list-group-item">
-        <a href="#misioneros">Misioneros Bíblicos (13)</a>
-      </li>
-    </ul>
+sidebar_include: ministry-sidebar.html
 ---
 
-<!-- Ministros Section -->
-<section id="ministros" class="staff-section">
-  <h2 class="staff-section-header">Ministros</h2>
-  <div class="staff-grid row">
-    {% for minister in site.data.ministers.ministers %}
-    {% include staff-card.html person=minister folder="ministers" %}
-    {% endfor %}
-  </div>
-</section>
-
-<!-- Pastores Section -->
-<section id="pastores" class="staff-section">
-  <h2 class="staff-section-header">Pastores</h2>
-  <div class="staff-grid row">
-    {% for pastor in site.data.ministers.pastors %}
-    {% include staff-card.html person=pastor folder="pastors" %}
-    {% endfor %}
-  </div>
-</section>
-
-<!-- Misioneros Bíblicos Section -->
-<section id="misioneros" class="staff-section">
-  <h2 class="staff-section-header">Misioneros Bíblicos</h2>
-  <div class="staff-grid row">
-    {% for worker in site.data.ministers.workers %}
-    {% include staff-card.html person=worker folder="workers" %}
-    {% endfor %}
-  </div>
-</section>
+{% for section in site.data.ministry_sections %}
+  {% assign people = site.data.ministers[section.data_key] %}
+  <section id="{{ section.id }}" class="staff-section">
+    <h2 class="staff-section-header">{{ section.title }}</h2>
+    <div class="staff-grid row">
+      {% for person in people %}
+        {% include staff-card.html person=person folder=section.folder %}
+      {% endfor %}
+    </div>
+  </section>
+{% endfor %}
