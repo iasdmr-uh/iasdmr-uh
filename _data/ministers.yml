@@ -52,9 +52,13 @@ workers:
   - name: Oscar Danilo Salinas Flores
     state: Obrero Bíblico
     photo: Oscar_Salinas.jpg
-  - name: Denis Alexánder Mejía Ramírez 
+  - name: Victor Garcia
     state: Obrero Bíblico
-    photo: Denis_Mejia.jpg
+    photo: Victor_Garcia.jpg
+  - name: Maikol Moran
+    state: Obrero Bíblico
+  - name: Isabel García
+    state: Obrero Bíblico
   - name: Santiago Domínguez Gómez   
     state: Obrero Bíblico
     photo: Santiago_Dominguez.jpg
@@ -64,3 +68,25 @@ workers:
   - name: Abimael Bonilla Navarrete 
     state: Obrero Bíblico
     photo: Abimael_Bonilla.jpg
+
+deacons:
+  - name: Juan Carlos Sosa
+    state: Diácono Consagrado
+    photo: Juan_Sosa.jpg
+
+admin:
+  - name: Alexander Batres
+    state: Personal Administrativo
+    photo: Alexander_Batres.jpg
+  - name: Wilmer Padilla
+    state: Personal Administrativo
+    photo: Wilmer_Padilla.jpg
+  - name: Amilcar Villalta
+    state: Personal Administrativo
+    photo: Amilcar_Villalta.jpg
+  - name: Norma Lara
+    state: Personal Administrativo
+    photo: Norma_Lara.jpg
+  - name: Roberto Contreras
+    state: Personal Administrativo
+    photo: Roberto_Contreras.jpg

@@ -1,0 +1,20 @@
+- id: ministros
+  title: Ministros
+  data_key: ministers
+  folder: ministers
+- id: pastores
+  title: Pastores
+  data_key: pastors
+  folder: pastors
+- id: diaconos
+  title: Diáconos Consagrados
+  data_key: deacons
+  folder: deacons
+- id: admin
+  title: Personal Administrativo
+  data_key: admin
+  folder: admin
+- id: misioneros
+  title: Misioneros Bíblicos
+  data_key: workers
+  folder: workers

@@ -17,17 +17,31 @@ layout: base
 
   <div class="row">
     <!-- side bar -->
-    {% if page.sidebar_title and page.sidebar_content%}
+    {% assign has_sidebar = false %}
+    {% if page.sidebar_title %}
+      {% if page.sidebar_content or page.sidebar_include %}
+        {% assign has_sidebar = true %}
+      {% endif %}
+    {% endif %}
+
+    {% if has_sidebar %}
     <div class="col-md-3">
       <div class="sidebar">
         <h4>{{ page.sidebar_title }}</h4>
-        {{ page.sidebar_content}}
+        {% if page.sidebar_content %}
+          {{ page.sidebar_content}}
+        {% elsif page.sidebar_include %}
+          {% case page.sidebar_include %}
+            {% when "ministry-sidebar.html" %}
+              {% include ministry-sidebar.html %}
+          {% endcase %}
+        {% endif %}
       </div>
     </div>
     {% endif %}
 
     <!-- content -->
-    {% if page.sidebar_title and page.sidebar_content%}
+    {% if has_sidebar %}
     <div class="col-md-9">
       <div class="row">
         {{ content }}

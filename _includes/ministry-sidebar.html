@@ -1,0 +1,8 @@
+<ul class="list-group">
+  {% for section in site.data.ministry_sections %}
+    {% assign people = site.data.ministers[section.data_key] %}
+    <li class="list-group-item">
+      <a href="#{{ section.id }}">{{ section.title }} ({{ people | size }})</a>
+    </li>
+  {% endfor %}
+</ul>
