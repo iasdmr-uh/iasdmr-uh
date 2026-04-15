@@ -4,14 +4,14 @@ ministers:
     photo: Jary_Reyes.jpg
   - name: Rubi Gamez
     state: Ministro Ordenado
+  - name: Steven Eliézer Pereira Wilson
+    state: Ministro Ordenado
+    photo: Eliezer_Pereira.jpg
 
 pastors:
   - name: Daniel Alberto Contreras Cruz  
     state: Pastor Ordenando
     photo: Daniel_Contreras.jpg
-  - name: Steven Eliézer Pereira Wilson 
-    state: Pastor Ordenando
-    photo: Eliezer_Pereira.jpg
   - name: Santos Guardado
     state: Pastor Ordenando
     photo: Santos_Guardado.jpg
